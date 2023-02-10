@@ -1,0 +1,73 @@
+---
+layout: page
+---
+
+<head> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head> 
+
+<div class="container my-5">
+  <h2 class="text-center mb-5">Tracks</h2>
+  <div class="row">
+    {% for track in site.tracks %}
+      <div class="col-md-12 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="{{ track.url }}">{{ track.title }}</a>
+            </h5>
+            <p class="card-text">{{ track.description }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<h1>Judges</h1>
+
+<table style="table-layout: fixed; font-size: 88%; align: middle;" summary="table containing pictures of the instructors and links to their personal websites">
+  <thead>
+    <tr>
+      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/Boneh.jpeg" alt="Dan Boneh"></th>
+      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/goldwasser.jpeg" alt="Shafi Goldwasser"></th>
+      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/dawn-berkeley.jpg" alt="Dawn Song"></th>
+      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/thaler.png" alt="Justin Thaler"></th>
+      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/yupeng.jpeg" alt="Yupeng Zhang"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a></td>
+      <td><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/goldwasser.html/">Shafi Goldwasser</a></td>
+      <td><a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></td>
+      <td><a href="https://people.cs.georgetown.edu/jthaler/">Justin Thaler</a></td>
+      <td><a href="http://people.tamu.edu/~zhangyp/">Yupeng Zhang</a></td>
+    </tr>
+    <tr>
+      <td>Stanford</td>
+      <td>UC Berkeley</td>
+      <td>UC Berkeley</td>
+      <td>Georgetown University</td>
+      <td>Texas A&M University</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Sponsors</h1>
+<div class="sponsor-logos">
+  <a href="https://rdi.berkeley.edu" target="_blank">
+    <img src="{{site.baseurl}}/assets/img/berkeley.png" alt="Sponsor 1">
+  </a>
+  <a href="https://rdi.berkeley.edu" target="_blank">
+    <img src="{{site.baseurl}}/assets/img/berkeley.png" alt="Sponsor 2">
+  </a>
+  <a href="https://rdi.berkeley.edu" target="_blank">
+    <img src="{{site.baseurl}}/assets/img/berkeley.png" alt="Sponsor 3">
+  </a>
+  <a href="https://rdi.berkeley.edu" target="_blank">
+    <img src="{{site.baseurl}}/assets/img/berkeley.png" alt="Sponsor 3">
+  </a>
+  <!-- Add more logos as needed -->
+</div>
