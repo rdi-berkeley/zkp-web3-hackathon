@@ -166,8 +166,8 @@ img {
   -webkit-transition: height .5s ease-in-out;
   -moz-transition: height .5s ease-in-out;
   transition: height .5s ease-in-out;
-  height: 200px;
-  width: 120px
+  height: 220px;
+  width: 75
 }
 
 .navbar-custom .navbar-brand-logo img,
