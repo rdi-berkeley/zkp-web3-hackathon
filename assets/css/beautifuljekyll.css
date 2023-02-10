@@ -166,13 +166,14 @@ img {
   -webkit-transition: height .5s ease-in-out;
   -moz-transition: height .5s ease-in-out;
   transition: height .5s ease-in-out;
-  height: 100px;
+  height: 200px;
+  width: 120px
 }
 
 .navbar-custom .navbar-brand-logo img,
 .navbar-custom.top-nav-short .navbar-brand-logo img,
 .navbar-custom.top-nav-short-permanent .navbar-brand-logo img {
-  height: 2.5rem;
+  height: 3.5rem;
 }
 
 .navbar-custom .navbar-nav .nav-item {
