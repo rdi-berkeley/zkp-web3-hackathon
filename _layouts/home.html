@@ -7,14 +7,14 @@ layout: page
 </head> 
 
 <div class="container my-5">
-  <h2 class="text-center mb-5">Tracks</h2>
+  <h1 class="mb-5">Tracks</h1>
   <div class="row">
     {% for track in site.tracks %}
       <div class="col-md-12 mb-3">
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">
-              <a href="{{ track.url }}">{{ track.title }}</a>
+              <a href="{{ track.url | absolute_url }}">{{ track.title }}</a>
             </h5>
             <p class="card-text">{{ track.description }}</p>
           </div>
