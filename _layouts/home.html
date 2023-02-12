@@ -141,30 +141,36 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
 <style>
   form {
     width: 95%;
-    padding: 10px;
-    background-color: #f2f2f2;
+    max-width: 500px;
+    padding: 30px;
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
   }
   
   .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   label {
-    display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
   }
   
   input[type="text"],
   input[type="email"] {
-    padding: 5px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 16px;
     width: 100%;
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
   }
   
   input[type="submit"] {
@@ -174,14 +180,22 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 22px;
   }
 </style>
 
-
 <form action="submit.php" method="post">
-<h3>Join the mailing list to stay tuned!</h3>
+  <h2>Join the mailing list to stay tuned!</h2>
   <div class="form-group">
     <label for="email">Email:<span style="color:red">*</span></label>
     <input type="email" id="email" name="email" required>
@@ -198,6 +212,7 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
     <input type="submit" value="Subscribe">
   </div>
 </form>
+
 
 
 
