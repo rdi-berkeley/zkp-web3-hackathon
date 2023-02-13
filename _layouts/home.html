@@ -12,9 +12,18 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
 
 <br>
 
-<h4> See our ZKP MOOC at <a href="https://zk-learning.org">zk-learning.org</a>. Over 3500 students have enrolled from all around the world!</h4>
+<h1 style="text-align: center; font-size: 36px; font-weight: bold; text-shadow: 2px 2px #CCC; margin-top: 100px; margin-bottom: 100px;">Over 3500 students have enrolled in the <a href="https://zk-learning.org">ZKP MOOC</a> from all around the world!</h1>
 
 <br> 
+
+<!-- CSS to center mailform -->
+
+<style type="text/css">
+  #mc_embed_signup {
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>
 
 <!-- CSS for the banner -->
 
@@ -112,7 +121,7 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
 
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfnFGFfkLkwjG1IyoWqVrAqNpfBOxOmkxKdx9ygM-ro7c0bw/viewform">
-  <button class="apply-button">Apply now</button>
+  <button class="apply-button">APPLY TO PARTICIPATE</button>
 </a>
 
 <br>
@@ -121,10 +130,18 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head> 
 
-<h1>Awards</h1>
-<p>Winners will be nominated to join ZKP summer cluster at Simons Institute at UC Berkeley, co-hosted by RDI and Simons Institute, with up to $100K available for scholarships.</p>
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 100px; margin-bottom: 100px;">
 
-<div class="container-fluid">
+<h1 style="text-align: center; font-size: 36px; font-weight: bold; text-shadow: 2px 2px #CCC; margin-top: 100px; margin-bottom: 100px;">Code your way to the top - 100.000$ and a trip to Berkeley await!</h1>
+<ul style="list-style-position: inside; margin: 40px auto; width: 80%; font-size: 24px;">
+  <li style="margin-bottom: 20px;">Get nominated for the ZKP summer cluster at <a href="https://simons.berkeley.edu/homepage">Simons Institute at UC Berkeley</a>! - supported with 100.000$ in scholarships!</li>
+  <li style="margin-bottom: 20px;">Propose a self-selected project to be awarded the grand prize of up to 10.000$</li>
+  <li style="margin-bottom: 20px;">Fulfill designated tasks, as proposed in each of the Hackathon repostitories - win individually assigned prizes!</li>
+</ul>
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 100px; margin-bottom: 100px;">
+
+<!-- <div class="container-fluid">
   <h1 class="mb-5">Tracks</h1>
   <div class="row">
     {% for track in site.tracks %}
@@ -139,48 +156,70 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
         </div>
       </div>
     {% endfor %}
-    <div class="col-xl-8 mb-3">
-        <div class="card h-100">
+  </div>
+</div> -->
+<div class="container-fluid">
+  <h1 class="mb-5 text-center">Tracks</h1>
+  <div class="d-flex flex-column align-items-center">
+    {% for track in site.tracks %}
+      <div class="mb-3" style="min-width: 700px;">
+        <div class="card h-100 shadow-sm d-flex flex-column align-items-center">
           <div class="card-body">
-            <h5 class="card-title">
-              <a>+ more to be announced...</a>
+            <h5 class="card-title text-center">
+              <a href="{{ track.url | absolute_url }}">{{ track.title }}</a>
             </h5>
+            <p class="card-text text-center">{{ track.description }}</p>
+            <div class="d-flex justify-content-center">
+              <a href="https://github.com/" target="_blank">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/github-153-675523.png" height="50" style="margin-right: 20px;">
+              </a>
+            </div>
           </div>
         </div>
       </div>
+    {% endfor %}
   </div>
 </div>
 
 
-<h1>Judges</h1>
+<h1 style="text-align: center; font-size: 24px; font-weight: bold; color: #7B0027; margin-top: 50px; margin-bottom: 50px;">MORE TO BE ANNOUNCED SOON!</h1>
 
-<table style="table-layout: fixed; font-size: 88%; align: middle;" summary="table containing pictures of the instructors and links to their personal websites">
-  <thead>
-    <tr>
-      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/Boneh.jpeg" alt="Dan Boneh"></th>
-      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/goldwasser.jpeg" alt="Shafi Goldwasser"></th>
-      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/dawn-berkeley.jpg" alt="Dawn Song"></th>
-      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/thaler.png" alt="Justin Thaler"></th>
-      <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/yupeng.jpeg" alt="Yupeng Zhang"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a></td>
-      <td><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/goldwasser.html/">Shafi Goldwasser</a></td>
-      <td><a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></td>
-      <td><a href="https://people.cs.georgetown.edu/jthaler/">Justin Thaler</a></td>
-      <td><a href="http://people.tamu.edu/~zhangyp/">Yupeng Zhang</a></td>
-    </tr>
-    <tr>
-      <td>Stanford</td>
-      <td>UC Berkeley</td>
-      <td>UC Berkeley</td>
-      <td>Georgetown University</td>
-      <td>Texas A&M University</td>
-    </tr>
-  </tbody>
-</table>
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 100px; margin-bottom: 100px;">
+
+
+<h1 style="text-align: center; font-size: 36px; font-weight: bold; text-shadow: 2px 2px #CCC; margin-top: 100px; margin-bottom: 100px;">JUDGES</h1>
+
+
+<div style="text-align: center;">
+  <table style="table-layout: fixed; margin: auto; font-size: 88%;" summary="table containing pictures of the instructors and links to their personal websites">
+    <thead>
+      <tr>
+        <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/Boneh.jpeg" alt="Dan Boneh"></th>
+        <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/goldwasser.jpeg" alt="Shafi Goldwasser"></th>
+        <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/dawn-berkeley.jpg" alt="Dawn Song"></th>
+        <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/thaler.png" alt="Justin Thaler"></th>
+        <th style="width: 20%;"><img style="object-fit:cover" width=150 height=200 src="{{site.baseurl}}/assets/img/yupeng.jpeg" alt="Yupeng Zhang"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a></td>
+        <td><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/goldwasser.html/">Shafi Goldwasser</a></td>
+        <td><a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></td>
+        <td><a href="https://people.cs.georgetown.edu/jthaler/">Justin Thaler</a></td>
+        <td><a href="http://people.tamu.edu/~zhangyp/">Yupeng Zhang</a></td>
+      </tr>
+      <tr>
+        <td>Stanford</td>
+        <td>UC Berkeley</td>
+        <td>UC Berkeley</td>
+        <td>Georgetown University</td>
+        <td>Texas A&M University</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 <div style="height:30px; width:100%; clear:both;"></div>
