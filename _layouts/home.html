@@ -147,9 +147,9 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
 
 <div class="container-fluid">
   <h1 class="mb-5 text-center">Hackathon Tracks</h1>
-  <div class="d-flex flex-column align-items-center">
+  <div class="d-flex flex-wrap">
     {% for track in site.tracks %}
-      <div class="mb-3" style="min-width: 700px;">
+      <div class="mb-3 w-100">
         <div class="card h-100 shadow-sm d-flex flex-column align-items-center">
           <div class="card-body">
             <h5 class="card-title text-center">
@@ -165,7 +165,7 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
         </div>
       </div>
     {% endfor %}
-    <div class="mb-3" style="min-width: 700px;">
+    <div class="mb-3 w-100">
       <div class="card h-100 shadow-sm d-flex flex-column align-items-center">
         <div class="card-body">
           <h5 class="card-title">
@@ -176,6 +176,7 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
     </div>
   </div>
 </div>
+
 
 
 <!-- <h1 style="text-align: center; font-size: 24px; font-weight: bold; color: #7B0027; margin-top: 50px; margin-bottom: 50px;">MORE TO BE ANNOUNCED SOON!</h1> -->
