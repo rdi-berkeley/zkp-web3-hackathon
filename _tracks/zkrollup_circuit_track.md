@@ -1,5 +1,5 @@
 ---
-title: CKP Circuits track
+title: ZKP Circuits track
 description: Optimize common ZKP circuits to improve performance while preserving correctness
 date: 2020-01-02 14:40:45
 ---
