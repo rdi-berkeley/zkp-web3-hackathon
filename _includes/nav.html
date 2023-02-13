@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
+<!-- <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
   {%- if site.title-img -%}
     <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
@@ -59,4 +59,65 @@
 
 </nav>
 
-{% include search.html %}
+{% include search.html %} -->
+
+<!-- <div style="height: 50px; width: 100%; background-color: #003262; position:absolute;">
+    <div class="constraint" style="color: white; font-size: 2rem;">
+        <a href="https://berkeley.edu/" style="text-decoration: none;">
+            <img src="/assets/images/ucbseal_139_540.png" style="height: 40px; margin: 5px; margin-right: 0;">
+            <img src="/assets/images/Berkeley_wordmark_white_no_uc.png" style="height: 40px; margin-left: -10px;">
+        </a>
+    </div>
+</div> -->
+<!-- <div class="constraint">
+  <div id="header">
+      <div id="logo-container" style="padding: 1rem;">
+          <a href="/">
+              <img src="/assets/img/Berkeley_RDI_Logo.png" id="logo">
+          </a>
+      </div>
+      <div id="nav-container">
+          <div id="nav-links" style="font-size: 11pt; vertical-align: middle;">             
+              <a href="https://twitter.com/BerkeleyRDI?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @BerkeleyRDI</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+<!-- <style>
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  #logo-container {
+    width: 30%;
+  }
+  
+  #logo {
+    width: 100%;
+  }
+  
+  #nav-container {
+    width: 70%;
+    text-align: right;
+  }
+</style> -->
+
+<div class="constraint">
+  <div style="margin-top: 20px; margin-bottom: 20px;" id="header">
+      <div id="logo-container">
+          <a href="/">
+              <img src="{{site.baseurl}}/assets/img/Berkeley_RDI_Logo.png" id="logo">
+          </a>
+      </div>
+      <div id="nav-container">
+          <div id="nav-links" style="font-size: 11pt; vertical-align: middle">    
+            <a href="https://twitter.com/BerkeleyRDI?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @BerkeleyRDI</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+      </div>
+  </div>
+</div>
+
