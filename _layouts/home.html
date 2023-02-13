@@ -48,14 +48,6 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
   This ZKP / Web3 Hackathon, hosted by Berkeley <a href="https://rdi.berkeley.edu/">RDI</a> and in partnership with <a href="https://zk-learning.org">ZKP MOOC</a> (~3500 enrolled worldwide), aims to bring together all students, researchers, and practitioners to build and showcase their innovative work in ZKP.
 </h1>
 
-<!-- CSS to center mailform -->
-
-<style type="text/css">
-  #mc_embed_signup {
-    margin: 0 auto;
-    text-align: center;
-  }
-</style>
 
 <!-- CSS for the banner -->
 
@@ -337,12 +329,19 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
   }
 </style>
 
+
+
+
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:90%; max-width:600px; margin:0 auto;}
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+	@media only screen and (max-width: 600px) {
+		#mc_embed_signup{width:100%;}
+	}
 </style>
 <div id="mc_embed_signup">
     <form action="https://berkeley.us14.list-manage.com/subscribe/post?u=0d89bb5c8066a9533eb98759d&amp;id=c0a5c3e877&amp;f_id=004ae9e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -367,29 +366,6 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
 	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" required>
 	<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
 </div>
-<!-- <div class="mc-field-group">
-	<label for="mce-ORG">Organization </label>
-	<input type="text" value="" name="ORG" class="" id="mce-ORG">
-	<span id="mce-ORG-HELPERTEXT" class="helper_text"></span>
-</div> -->
-<!-- <div class="mc-field-group">
-	<label for="mce-CATEGORY">Category </label>
-	<select name="CATEGORY" class="" id="mce-CATEGORY">
-	<option value=""></option>
-	<option value="Academic">Academic</option>
-<option value="Industry">Industry</option>
-<option value="Third ChoiceOther (e.g. NGO, Government)">Third ChoiceOther (e.g. NGO, Government)</option> -->
-
-	<!-- </select>
-	<span id="mce-CATEGORY-HELPERTEXT" class="helper_text"></span>
-</div>
-<div class="mc-field-group">
-	<label for="mce-LOCATION">Location </label>
-	<select name="LOCATION" class="" id="mce-LOCATION">
-	<option value=""></option>
-	<option value="Berkeley">Berkeley</option>
-<option value="Bay Area">Bay Area</option>
-<option value="Remote">Remote</option> -->
 
 	</select>
 	<span id="mce-LOCATION-HELPERTEXT" class="helper_text"></span>
@@ -397,7 +373,7 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
 	<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	</div>    
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0d89bb5c8066a9533eb98759d_c0a5c3e877" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
