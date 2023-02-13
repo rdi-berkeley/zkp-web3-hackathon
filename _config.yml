@@ -284,6 +284,11 @@ plugins:
 
 collections:
   tracks:
+    order:
+      - 2020-02-28-blockchain-application.md
+      - 2020-02-29-zkbridge.md
+      - 2020-02-30-zkrollup-circuit.md
+      - 2020-02-31-benchmarking.md
     output: true
     permalink: /:collection/:path/
 
