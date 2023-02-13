@@ -1,6 +1,6 @@
 ---
 title: zkRollup Circuit 
-description: Reduce the total size of the rollup circuit while preserving the correctness.
+description: Optimize common ZKP circuits to improve performance while preserving correctness
 date: 2020-01-02 14:40:45
 ---
 

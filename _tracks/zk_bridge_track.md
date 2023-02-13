@@ -1,6 +1,6 @@
 ---
 title: zkBridge track 
-description: Building bridging protocols between two blockchains using ZKP protocols.
+description: Contribute to an open source framework and suite to build bridging solutions between blockchains using ZKP protocols, help build a secure, universal foundation for multichain interoperability, in partnership with zkcollective.
 date: 2020-01-03 14:40:45
 ---
 
