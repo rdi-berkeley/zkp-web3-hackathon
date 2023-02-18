@@ -100,7 +100,7 @@ output:
 </div>
 
 <div style="text-align:center">
-    <img src="/assets/img/Harness.jpg?raw=true" alt="Alt text" title="Title" />
+    <img src="{{site.baseurl}}/assets/img/Harness.jpg?raw=true" alt="Alt text" title="Title" />
     <figcaption>Figure 1 - zk-Harness Benchmarking Tool</figcaption>
 </div>
 
