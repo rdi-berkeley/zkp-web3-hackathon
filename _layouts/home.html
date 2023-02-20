@@ -94,57 +94,6 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
   }
 </style>
 
-
-<!-- HTML for the countdown timer -->
-
-<div style="text-align: center;">
-  <p id="countdown" style="font-size: 40px; color: #CB9445;"></p>
-</div>
-
-<!-- JavaScript for the countdown timer -->
-
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Mar 1, 2023 12:00:00").getTime();
-
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-
-    // Get today's date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Display the result in the element with id="countdown"
-    document.getElementById("countdown").innerHTML = days + "d  " + hours + "h  "
-    + minutes + "m  " + seconds + "s ";
-    
-    // If the count down is finished, write some text 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "The hackathon has started!";
-    }
-  }, 1000);
-</script>
-
-<!-- CSS for the countdown timer -->
-
-<style>
-  #countdown {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    /* text-shadow: 2px 2px #333; */
-  }
-</style>
-
-
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfnFGFfkLkwjG1IyoWqVrAqNpfBOxOmkxKdx9ygM-ro7c0bw/viewform">
   <button class="apply-button">APPLY TO PARTICIPATE</button>
 </a>
@@ -270,7 +219,6 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 25px;
 }
 
 .judge-card {
@@ -278,16 +226,17 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
   height: 220px;
   margin-bottom: 30px;
   text-align: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 .judge-card img {
   display: block;
-  width: 220px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+
 }
 
 .judge-info h3 {
