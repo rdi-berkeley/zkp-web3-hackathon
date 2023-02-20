@@ -226,49 +226,87 @@ cover-img: "/assets/img/ZKP_Web3 HackathonBanner.jpg"
   }
 </style>
 
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="{{site.baseurl}}/assets/img/Boneh.jpeg" alt="Dan Boneh">
-    <div class="card-body">
-      <h5 class="card-title">Dan Boneh</h5>
-      <p class="card-text">Stanford</p>
-      <a href="https://crypto.stanford.edu/~dabo/" class="btn btn-primary">Visit website</a>
+<div class="judge-cards">
+  <div class="judge-card">
+    <img src="{{site.baseurl}}/assets/img/Boneh.jpeg" alt="Dan Boneh">
+    <div class="judge-info">
+      <h3><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a></h3>
+      <p>Stanford</p>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="{{site.baseurl}}/assets/img/goldwasser.jpeg" alt="Shafi Goldwasser">
-    <div class="card-body">
-      <h5 class="card-title">Shafi Goldwasser</h5>
-      <p class="card-text">UC Berkeley</p>
-      <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/goldwasser.html/" class="btn btn-primary">Visit website</a>
+  <div class="judge-card">
+    <img src="{{site.baseurl}}/assets/img/goldwasser.jpeg" alt="Shafi Goldwasser">
+    <div class="judge-info">
+      <h3><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/goldwasser.html/">Shafi Goldwasser</a></h3>
+      <p>UC Berkeley</p>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="{{site.baseurl}}/assets/img/dawn-berkeley.jpg" alt="Dawn Song">
-    <div class="card-body">
-      <h5 class="card-title">Dawn Song</h5>
-      <p class="card-text">UC Berkeley</p>
-      <a href="https://people.eecs.berkeley.edu/~dawnsong/" class="btn btn-primary">Visit website</a>
+  <div class="judge-card">
+    <img src="{{site.baseurl}}/assets/img/dawn-berkeley.jpg" alt="Dawn Song">
+    <div class="judge-info">
+      <h3><a href="https://people.eecs.berkeley.edu/~dawnsong/">Dawn Song</a></h3>
+      <p>UC Berkeley</p>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="{{site.baseurl}}/assets/img/thaler.png" alt="Justin Thaler">
-    <div class="card-body">
-      <h5 class="card-title">Justin Thaler</h5>
-      <p class="card-text">Georgetown University</p>
-      <a href="https://people.cs.georgetown.edu/jthaler/" class="btn btn-primary">Visit website</a>
+  <div class="judge-card">
+    <img src="{{site.baseurl}}/assets/img/thaler.png" alt="Justin Thaler">
+    <div class="judge-info">
+      <h3><a href="https://people.cs.georgetown.edu/jthaler/">Justin Thaler</a></h3>
+      <p>Georgetown University</p>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="{{site.baseurl}}/assets/img/yupeng.jpeg" alt="Yupeng Zhang">
-    <div class="card-body">
-      <h5 class="card-title">Yupeng Zhang</h5>
-      <p class="card-text">Texas A&M University</p>
-      <a href="http://people.tamu.edu/~zhangyp/" class="btn btn-primary">Visit website</a>
+  <div class="judge-card">
+    <img src="{{site.baseurl}}/assets/img/yupeng.jpeg" alt="Yupeng Zhang">
+    <div class="judge-info">
+      <h3><a href="http://people.tamu.edu/~zhangyp/">Yupeng Zhang</a></h3>
+      <p>Texas A&amp;M University</p>
     </div>
   </div>
 </div>
 
+<style>
+	.judge-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.judge-card {
+  width: 20%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.judge-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.judge-info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.judge-info p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #888;
+}
+
+.judge-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.judge-info a:hover {
+  text-decoration: underline;
+}	
+</style>
 
 
 <h1 style="text-align: center; font-size: 24px; font-weight: bold; color: #7B0027; margin-top: 40px; margin-bottom: 40px;">MORE JUDGES WILL BE ANNOUNCED SOON!</h1>
