@@ -11,7 +11,7 @@ output:
 
 
 <div style="text-align: justify">
- <p>We cordially invite the zk SNARK community to join us in creating a comprehensive benchmarking framework for zk SNARKs. As part of our efforts to further advance the technology and promote its widespread adoption, we have organized a Hackathon to bring together experts and enthusiasts from the community to collaborate and contribute to the establishment of a standardized benchmarking framework. This is a crucial step in our mission to create a reference point for non-experts and experts alike on what zkSNARK scheme best suits their needs, and to also promote further research by identifying performance gaps. We believe that the collective efforts of the community will help to achieve this goal. Whether you are a researcher, developer, or simply passionate about zk SNARKs, we welcome your participation and contribution in this exciting initiative.</p>
+ <p>We cordially invite the zk SNARK community to join us in creating a comprehensive benchmarking framework (zk-Harness) for zk SNARKs. As part of our efforts to further advance the technology and promote its widespread adoption, we have organized a ZKP-benchmark track in this ZKP/web3 Hackathon to bring together experts and enthusiasts from the community to collaborate and contribute to the establishment of a standardized benchmarking framework. This is a crucial step in the important mission to create a reference point for non-experts and experts alike on what zkSNARK scheme best suits their needs, and to also promote further research by identifying performance gaps. We believe that the collective efforts of the community will help to achieve this goal. Whether you are a researcher, developer, or simply passionate about zk SNARKs, we welcome your participation and contribution in this exciting initiative. </p>
 </div>
 
 
@@ -20,26 +20,37 @@ output:
 </div>
 
 <div style="text-align: justify">
-    <p>There is a large and ever-increasing number of SNARK implementations. Although the theoretical complexity of the underlying proof systems is well understood, the concrete costs rely on a number of factors such as the efficiency of the field and curve implementations, the underlying proof techniques, and the computation model and its compatibility with the specific application. The difference in implementation is evident in multiple layers of the SNARK stack, summarized as follows:</p>
+    <p>There is a large and ever-increasing number of SNARK implementations. Although the theoretical complexity of the underlying proof systems is well understood, the concrete costs rely on a number of factors such as the efficiency of the field and curve implementations, the underlying proof techniques, and the computation model and its compatibility with the specific application. To elicit the concrete performance differences in different proof systems, it is important to separately benchmark the following:</p>
 
     <h2>1.1 - Field and Curve computations</h2>
-    <p>All popular SNARKs operate over prime fields, which are basically integers modulo p, i.e,. F<sub>p</sub>. While some SNARKs are associated with a single field F<sub>p</sub>, there are many SNARKs that rely on elliptic curve groups for security. For such SNARKs, the scalar field of the elliptic curve is F<sub>p</sub>, and the base field is a different field F<sub>q</sub>. Thus, the aim is to benchmark the field F<sub>p</sub>, along with the field F<sub>q</sub> and the elliptic curve group (if applicable).</p>
+    <p>All popular SNARKs operate over prime fields, which are basically integers modulo p, i.e., F<sub>p</sub>. While some SNARKs are associated with a single field F<sub>p</sub>, there are many SNARKs that rely on elliptic curve groups for security. For such SNARKs, the scalar field of the elliptic curve is F<sub>p</sub>, and the base field is a different field F<sub>q</sub>. Thus, the aim is to benchmark the field F<sub>p</sub>, along with the field F<sub>q</sub> and the elliptic curve group (if applicable).</p>
 
     <p>Benchmarking F<sub>p</sub> and F<sub>q</sub> involves benchmarking the following operations:</p>
     <ul>
         <li>Addition</li>
         <li>Subtraction</li>
         <li>Multiplication</li>
-        <li>Division</li>
         <li>(Modular) Exponentiation</li>
         <li>Inverse Exponentiation</li>
     </ul>
 
-    <p>An elliptic curve is defined over a prime field of specific order (F<sub>q</sub>). The elliptic curve group (E(F<sub>q</sub>)) is defined over the field on which the curve is defined, and it consists of all points on the curve, including a special point at infinity. The pairing operation takes two elements from G<sub>1</sub> and G<sub>2</sub> and computes an element in G<sub>T</sub>. The elements of G<sub>T</sub> are typically denoted by e(P, Q), where P is an element of G<sub>1</sub> and Q is an element of G<sub>2</sub>. For efficiency, it is required that not only arithmetic over the finite field is fast, but also fast arithmetic in the groups G<sub>1</sub> and G<sub>2</sub> as well as efficient pairings. Therefore, we intend to benchmark the following operations over pairing-friendly elliptic curves:</p>
+    <p>An elliptic curve is defined over a prime field of specific order (F<sub>q</sub>). The elliptic curve group (E(F<sub>q</sub>)) consists of the subgroup of points in the field that are on the curve, including a special point at infinity. While some SNARKs operate over elliptic curves without requiring pairings, others require pairings and therefore demand for pairing-friendly elliptic curves. The pairing operation takes an element from G<sub>1</sub> and an element from G<sub>2</sub> and computes an element in G<sub>T</sub>. The elements of G<sub>T</sub> are typically denoted by e(P, Q), where P is an element of G<sub>1</sub> and Q is an element of G<sub>2</sub>. For efficiency, it is required that not only is the finite field arithmetic fast, but also the arithmetic in groups G<sub>1</sub> and G<sub>2</sub> as well as pairings are efficient. Therefore, we intend to benchmark the following operations over pairing-friendly elliptic curves:</p>
+    
     <ul>
-        <li>Scalar Multiplication (in G<sub>1</sub> and G<sub>2</sub>)</li>
-        <li>Multi-Scalar Multiplication (MSM)  (in G<sub>1</sub> and G<sub>2</sub>)</li>
-        <li>Parings</li>
+    <li>Scalar Multiplication</li>
+    <ul>
+        <li>in G for single elliptic curves</li>
+        <li>in G<sub>1</sub> and G<sub>2</sub> for pairing-friendly elliptic curves</li>
+    </ul>
+    <li>Multi-Scalar Multiplication (MSM)</li>
+    <ul>
+        <li>in G for single elliptic curves</li>
+        <li>in G<sub>1</sub> and G<sub>2</sub> for pairing-friendly elliptic curves</li>
+    </ul>
+    <li>Pairings</li>
+    <ul>
+        <li>for pairing-friendly elliptic curves</li>
+    </ul>
     </ul>
 
     <p>If you are unfamiliar with any of the above described concepts, you can find a good introduction <a href="https://eprint.iacr.org/2022/1400.pdf">here</a>.</p>
@@ -57,9 +68,12 @@ output:
     <p>All computations we want to prove do not belong to arithmetic modulo p. For instance, Z<sub>2^64</sub> or uint64/int64 is a popular data type in traditional programming languages. Or, we might want to prove arithmetic on a different field, say Z<sub>q</sub>. This usually happens when we want to verify elliptic-curve based cryptographic primitives. An example of this is supporting verification of ECDSA signatures. The native field of elliptic curve underlying the chosen SNARK typically differs from the base field of the secp256k1 curve (secp256k1 is not pairing friendly and hence does not present a suitable curve to instantiate SNARKs).</p>
 
     <h3>1.2.3 - Circuits for SNARK-optimized primitives</h3>
+    <p>One of the challenges in the practically using SNARKs is their inefficiency with regard to traditional hash algorithms, like SHA-2, and traditional signature algorithms, such as ECDSA. They are fast when executed on a CPU, but prohibitively slow when used in a SNARK. As a result, the community has proposed several hash functions and signature algorithms that are SNARK-friendly, such as the following:</p>
     <ul>
         <li>Poseidon Hash</li>
+        <li>Pedersen Hash</li>
         <li>MIMC Hash</li>
+        <li>EdDSA</li>
     </ul>
 
     <h3>1.2.4 - Circuits for CPU-optimized primitives</h3>
@@ -68,12 +82,12 @@ output:
         <li>SHA-256</li>
         <li>Blake2</li>
         <li>ECDSA</li>
-        <li>EdDSA</li>
     </ul>
 
     <p>The integration of a new circuit requires benchmarks on the following operations:</p>
     <ul>
         <li>Compile</li>
+        <li>Witness Generation</li>
         <li>Setup</li>
         <li>Prove</li>
         <li>Verify</li>
@@ -88,9 +102,9 @@ output:
         <li>Number of physical and logical cores used</li>
 </ul>
 
-<p>For a detailed description on the configuration and log format expected for circuit benchmarks, we refer hackathon participants to the <a href="https://github.com/tumberger/zk-compilers/tree/main/tutorials">tutorials</a> section.</p>
+<p>For a detailed description on the configuration and log format expected for circuit benchmarks, we refer hackathon participants to the <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials">tutorials</a> section.</p>
 
-<p>We integrated gnark to exemplify how to integrate libraries into the benchmarking harness. You can find a description on how to run benchmarks for gnark <a href="https://github.com/tumberger/zk-compilers/tree/main/gnark">here</a>.</p>
+<p>We integrated gnark to exemplify how to integrate libraries into the zk-Harness. You can find a description on how to run benchmarks for gnark <a href="https://github.com/zkCollective/zk-Harness/tree/main/gnark">here</a>.</p>
 
 </div>
 
@@ -106,10 +120,10 @@ output:
 
 <div style="text-align: justify">
     <p>We have designed and developed zk-Harness as a general framework for benchmarking ZKPs, such that community members can easily contribute in a standardized fashion. The zk-Harness is designed for SNARK ZKP-frameworks that allow proving a circuit that describes a general computation. It is intended to be easily extensible - new ZKP-frameworks, hardware configurations and new measurement workload can be easily integrated. We specify a generic set of interfaces, such that benchmarks can be invoked through a configuration file (config.json), which produces a standardized output for a given benchmarking scenario (Arithmetic, Curve, Circuit, Recursion).</p>
-    <p>On a high level, zk-Harness takes as input a configuration file. The “Config Reader” reads the standardized config and invokes the ZKP framework as specified in the configuration file. You can find a description of the configuration file in the tutorials/config sub-folder of the GitHub repository. Each integrated ZKP framework exposes a set of functions that take as an input the standardized configuration parameters to execute the corresponding benchmarks. The output of benchmarking a given ZKP framework is a log file in csv format with standardized metrics. The log file is read by the “Log Analyzer”, which compiles the logs into HTML code that is displayed on the public website. You can find the standardized logging format in the tutorials/logs sub-folder.</p>
-    <p>Currently, the zk-Harness supports gnark and circom to provide a set of examples of how a ZKP-framework can be integrated in the zk-Harness. We provide a set of simple benchmarks that can be found in the <a href="https://github.com/tumberger/zk-compilers/tree/main/benchmarks">benchmarks</a> directory.</p>
-    <p>There are several components remaining in the zk-Harness that you can contribute to! For example, there are several ZKP frameworks that are not yet included (plonky2, arkworks, jellyfish, zokrates, libsnark) which are required for a holistic comparison that benefits the community. Further, we currently only support benchmarks for a subset of the existing circuits available for the integrated ZKP frameworks. You can find a list of circuits that are available, but not yet integrated, <a href="https://docs.google.com/spreadsheets/d/1tq8lvcg88dE6D-EVJd61hBKhQxpDsZF16UMYpDXjef8/edit#gid=834603388">here</a>.</p>
-    <h2>2.1 Hardware Specification</h2>
+    <p>On a high level, zk-Harness takes as input a configuration file. The "Config Reader" reads the standardized config and invokes the ZKP framework as specified in the configuration file. You can find a description of the configuration file in the tutorials/config sub-folder of the GitHub repository. Each integrated ZKP framework exposes a set of functions that take as an input the standardized configuration parameters to execute the corresponding benchmarks. The output of benchmarking a given ZKP framework is a log file in csv format with standardized metrics. The log file is read by the "Log Analyzer", which compiles the logs into pandas dataframes that are used by the front-end and displayed on the public website. You can find the standardized logging format in the <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials/logs">tutorials/logs</a> sub-folder.</p>
+    <p>Currently, the zk-Harness supports gnark and circom to provide a set of examples of how a ZKP-framework can be integrated in the zk-Harness. We provide a set of simple benchmarks that can be found in the <a href="https://github.com/zkCollective/zk-Harness/tree/main/benchmarks">benchmarks</a> directory.</p>
+    <p>There are several components remaining in the zk-Harness that you can contribute to! For example, there are several ZKP frameworks that are not yet included (plonky2, halo2, arkworks, jellyfish, zokrates, libsnark) which are required for a holistic comparison that benefits the community. Further, we currently only support benchmarks for a subset of the existing circuits available for the integrated ZKP frameworks. You can find a list of circuits that are available, but not yet integrated, <a href="https://docs.google.com/spreadsheets/d/1tq8lvcg88dE6D-EVJd61hBKhQxpDsZF16UMYpDXjef8/edit#gid=834603388">here</a>.</p>
+    <h2>Hardware Specification</h2>
     <p>We intend to run the benchmarks automatically on standardized machines, such as AWS EC2 instances, to allow for a standardized and unified comparison.</p>
 </div>
 
@@ -133,7 +147,7 @@ output:
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">4 - Program Task Description</h1>
 </div>
 
-<div style="text-align: center;">
+<div style="text-align: left;">
   <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.1 - Benchmarking Mathematical Operations</h1>
 </div>
 
@@ -142,8 +156,8 @@ output:
     <p>Benchmark different ZKP-frameworks and libraries for their specific implementations of native / non-native field arithmetic and elliptic curve group operations</p>
 
     <h2>Task Description / Steps</h2>
-    <p>The purpose of this task is to benchmark the performance of implementation of field arithmetic and elliptic curve group operations in different ZKP-framework and libraries, in order to assess their efficiency and identify areas for improvement.</p>
-    <p>Benchmarking native &amp; non-native field arithmetic involves benchmarking the following operations:</p>
+    <p>The purpose of this task is to benchmark the performance of implementation of field arithmetic and elliptic curve group operations in different ZKP-framework and libraries, in order to assess their efficiency and identify areas for improvement. </p>
+    <p>Benchmarking field arithmetic over F<sub>p</sub> and F<sub>q</sub> involves benchmarking the following operations:</p>
     <ul>
         <li>Addition</li>
         <li>Subtraction</li>
@@ -162,9 +176,10 @@ output:
     <h2>Designated Tasks</h2>
     <p>Comparative Evaluation of the above-mentioned field arithmetic and elliptic curve operations in the following frameworks:</p>
     <ul>
-        <li>circom</li>
         <li>gnark</li>
+        <li>circom</li>
         <li>halo2</li>
+        <li>jellyfish</li>
         <li>arkworks</li>
         <li>plonky2</li>
     </ul>
@@ -173,13 +188,13 @@ output:
 </div>
 
 
-<div style="text-align: center;">
+<div style="text-align: left;">
   <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.2 - New Circuits for Cryptographic Primitives</h1>
 </div>
 
 <div style="text-align: justify">
     <h2>Goal</h2>
-    <p>Develop a circuit implementation and benchmark it against circuits of the same computation that exist in other ZKP frameworks. other implementations.</p>
+    <p>Develop a circuit implementation and benchmark it against circuits of the same computation that exist in other ZKP frameworks</p>
 
     <h2>Task Description / Steps Involved</h2>
     <p>Given a ZKP framework, choose a cryptographic primitive that does not have an open source implementation, implement it and benchmark your implemented circuits of the same computation that exist in other ZKP frameworks. You can find a list of already implemented primitives <a href="https://docs.google.com/spreadsheets/d/1tq8lvcg88dE6D-EVJd61hBKhQxpDsZF16UMYpDXjef8/edit#gid=0">here</a>. The description on how to contribute a novel circuit implementation as a component of the zk-Harness can be found in the respective folder of the ZKP framework. This task comprises the following steps:</p>
@@ -200,23 +215,28 @@ output:
     <h2>Designated Tasks</h2>
     <p>Comparative Evaluation / implementation of one of the following primitives</p>
     <ul>
+        <li>Poseidon</li>
+        <li>Pedersen</li>
+        <li>MIMC</li>
         <li>SHA-256</li>
         <li>Blake 2</li>
-        <li>AES-128</li>
         <li>ECDSA (see <a href="https://github.com/ConsenSys/gnark/pull/372">here</a>)</li>
     </ul>
     <p>in the following frameworks</p>
     <ul>
-        <li>circom</li>
         <li>gnark</li>
+        <li>circom</li>
         <li>halo2</li>
+        <li>jellyfish</li>
+        <li>arkworks</li>
+        <li>plonky2</li>
     </ul>
 
     <p><strong>Prize:</strong> More details to be added soon!</p>
 </div>
 
 
-<div style="text-align: center;">
+<div style="text-align: left;">
   <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.3 - Supporting new ZKP-frameworks</h1>
 </div>
 
@@ -228,13 +248,13 @@ output:
     <p>There are many implementations of SNARKs that we intend to include in the zk-Harness. Hence, we encourage hackathon participants of the benchmarking track to integrate novel libraries that are not yet supported in the initial version of zk-Harness to support a holistic comparison of heterogeneous SNARK implementations.</p>
     <ol>
         <li>Choose a framework to integrate (e.g. arkworks / plonky2 / jellyfish)</li>
-        <li>Support the data loading of configuration files</li>
+        <li>Support the data loading of configuration files in the "Config Reader"</li>
         <li>Configure the framework behavior based on the configuration file</li>
-        <li>Generate logs for a specified logging format (see logging formats <a href="https://github.com/tumberger/zk-compilers/tree/main/tutorials/logs">here</a>)</li>
+        <li>Generate logs for a specified logging format (see logging formats <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials/logs">here</a>)</li>
         <li>Integrate the logs in the frontend implementation</li>
         <li>Create a pull request to integrate the implemented ZKP-framework in the zk-Harness and display the evaluation results on the public website.</li>
     </ol>
-    <p>You can find the detailed description on how to add a new library <a href="https://github.com/tumberger/zk-compilers/tree/main/tutorials">here</a>. You can find the standardized, cross framework, log format which is consumed by the log analyzer <a href="https://github.com/tumberger/zk-compilers/tree/main/tutorials/logs">here</a> and the description of the generic config files <a href="https://github.com/tumberger/zk-compilers/tree/main/tutorials/config">here</a>. To fully integrate a framework, you’ll need to adapt the config reader to invoke your benchmarking script and adapt the log analyzer to display your benchmarks on the webpage. The minimal integration of a new ZKP-framework in the zk-Harness should provide a “toy example” circuit.</p>
+    <p>You can find the detailed description on how to add a new library <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials">here</a>. You can find the standardized, cross framework, log format which is consumed by the log analyzer <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials/logs">here</a> and the description of the generic config files <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials/config">here</a>. To fully integrate a framework, you’ll need to adapt the config reader to invoke your benchmarking script and adapt the log analyzer to display your benchmarks on the webpage. The minimal integration of a new ZKP-framework in the zk-Harness should provide a “toy example” circuit.</p>
 
     <h2>Designated Tasks:</h2>
     <p>Integrate one or more of the following libraries into the zk-Harness:</p>
@@ -248,7 +268,7 @@ output:
 </div>
 
 
-<div style="text-align: center;">
+<div style="text-align: left;">
   <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.4 - Recursion Benchmarks</h1>
 </div>
 
@@ -263,7 +283,7 @@ output:
         <li>
             <p>Recursion via succinct verification of SNARKs</p>
 
-            <p>Recursive verification of a SNARK can be achieved by essentially proving the correct verification of a SNARK. As such, there are several challenges in choosing the optimal curve and field (e.g. read about 2-chains and cycles of pairing-friendly elliptic curves <a href="https://eprint.iacr.org/2021/1359">here</a>)</p>
+            <p>Recursive verification of a SNARK can be achieved by essentially proving the correct verification of a SNARK. As such, there are several challenges in choosing the optimal curve and field (e.g. read about 2-chains and cycles of pairing-friendly elliptic curves <a href="https://eprint.iacr.org/2021/1359">here</a>).</p>
         </li>
 
         <li>
@@ -281,7 +301,7 @@ output:
 
     <ul>
         <li>
-            <p>Recursive Verification of SNARKs</p>
+            <p>Recursive verification of SNARKs</p>
             <ul>
                 <li>plonky2</li>
                 <li>gnark</li>
@@ -300,18 +320,18 @@ output:
     <p>over one of the following fields/curves:</p>
 
     <ul>
-        <li>MNT4-MNT6 curves (see <a href="https://link.springer.com/article/10.1007/s00453-016-0221-0">here</a>)</li>
-        <li>BW6 on BLS12-381 (see <a href="https://github.com/yelhousni/gnark-crypto/tree/feat/bw6_on_bls12-381">here</a>)</li>
-        <li>Goldilocks field (in the case of plonky2)</li>
-        <li>Pallas / Vesta (Pasta) curves</li>
-        <li>secp256k1/secq256k1</li>
+        <li>MNT4-MNT6 curves (see <a href="https://link.springer.com/article/10.1007/s00453-016-0221-0">here</a> / gnark + arkworks)</li>
+        <li>BW6 on BLS12-381 (see <a href="https://github.com/yelhousni/gnark-crypto/tree/feat/bw6_on_bls12-381">here</a> / gnark)</li>
+        <li>Goldilocks field (plonky2)</li>
+        <li>Pallas / Vesta (Pasta) curves (halo2 + arkworks)</li>
+        <li>secp256k1/secq256k1 (arkworks + jellyfish)</li>
     </ul>
 
     <p><strong>Prize:</strong> More details to be added soon!</p>
 </div>
 
 
-<div style="text-align: center;">
+<div style="text-align: left;">
   <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.5 - zkEVM Benchmarks</h1>
 </div>
 
