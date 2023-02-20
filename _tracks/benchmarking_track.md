@@ -128,27 +128,11 @@ output:
 </div>
 
 <div style="text-align: center;">
-  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">3 - Review Mechanism</h1>
-</div>
-
-<div style="text-align: justify">
-    <p>We will carefully review the correctness of components before they are added to the zk-Harness. When integrating a new component in the zk-Harness, we recommend that you create a pull request, such that it can be independently reviewed. Your implementation will be reviewed with respect to the following criteria:</p>
-    <!-- <p></p> -->
-    <ul>
-        <li>Correctness of the implementation.</li>
-        <li>Efficiency of the implementation.</li>
-        <li>Quality of the documentation.</li>
-    </ul>
-    <p>When it comes to integrating new circuits into a specific ZKP-framework, we expect that you add tests that evaluate their correctness (If the ZKP-framework in question has a standard procedure to run tests on circuit implementations, we expect that you comply with it).</p>
-</div>
-
-
-<div style="text-align: center;">
-  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">4 - Program Task Description</h1>
+  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">3 - Program Task Description</h1>
 </div>
 
 <div style="text-align: left;">
-  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.1 - Benchmarking Mathematical Operations</h1>
+  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">3.1 - Benchmarking Mathematical Operations</h1>
 </div>
 
 <div style="text-justify: justify;">
@@ -189,7 +173,7 @@ output:
 
 
 <div style="text-align: left;">
-  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.2 - New Circuits for Cryptographic Primitives</h1>
+  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">3.2 - New Circuits for Cryptographic Primitives</h1>
 </div>
 
 <div style="text-align: justify">
@@ -237,7 +221,7 @@ output:
 
 
 <div style="text-align: left;">
-  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.3 - Supporting new ZKP-frameworks</h1>
+  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">3.3 - Supporting new ZKP-frameworks</h1>
 </div>
 
 <div style="text-align: justify">
@@ -269,7 +253,7 @@ output:
 
 
 <div style="text-align: left;">
-  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.4 - Recursion Benchmarks</h1>
+  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">3.4 - Recursion Benchmarks</h1>
 </div>
 
 <div style="text-align:justify">
@@ -332,7 +316,7 @@ output:
 
 
 <div style="text-align: left;">
-  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">4.5 - zkEVM Benchmarks</h1>
+  <h1 style="font-weight: bold; font-size: 2em; color: #003262;">3.5 - zkEVM Benchmarks</h1>
 </div>
 
 <div style="text-align:justify">
@@ -386,6 +370,20 @@ output:
 </div>
 
 
+<div style="text-align: center;">
+  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">4 - Review Mechanism</h1>
+</div>
+
+<div style="text-align: justify">
+    <p>We will carefully review the correctness of components before they are added to the zk-Harness. When integrating a new component in the zk-Harness, we recommend that you create a pull request, such that it can be independently reviewed. Your implementation will be reviewed with respect to the following criteria:</p>
+    <!-- <p></p> -->
+    <ul>
+        <li>Correctness of the implementation.</li>
+        <li>Efficiency of the implementation.</li>
+        <li>Quality of the documentation.</li>
+    </ul>
+    <p>When it comes to integrating new circuits into a specific ZKP-framework, we expect that you add tests that evaluate their correctness (If the ZKP-framework in question has a standard procedure to run tests on circuit implementations, we expect that you comply with it).</p>
+</div>
 
 <div style="text-align: center;">
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">5 - Benchmarking Hackathon Award and Prize</h1>
