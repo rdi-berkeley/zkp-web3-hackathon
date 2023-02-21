@@ -103,7 +103,6 @@ date: 2020-01-03 14:40:45
     <li>Gnosis
 
     <li>Tendermint-based chains
-    </li>
     </ul>
     <p>
     In this category, we evaluate any projects that are designed for the above chains, and pick projects that improve the interoperability between them in any dimension.
