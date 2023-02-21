@@ -88,7 +88,6 @@ date: 2020-01-03 14:40:45
     </p>
     <h2>Category 6: Integrated Production Quality Solutions for Focused Chains</h2>
 
-
     <p>
     There are in total <em>N*(N-1)</em> directional bridges given <em>N</em> chains. Given the large number of potential bridges, we will focus on bridges over certain chains in this program:
     </p>
@@ -103,7 +102,7 @@ date: 2020-01-03 14:40:45
     <li>Gnosis
 
     <li>Tendermint-based chains
-    </li>
+    </ul>
     <p>
     In this category, we evaluate any projects that are designed for the above chains, and pick projects that improve the interoperability between them in any dimension.
     </p>
