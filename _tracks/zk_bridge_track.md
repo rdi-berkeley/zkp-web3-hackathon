@@ -53,7 +53,60 @@ date: 2020-01-03 14:40:45
 
     <p>We recommend <a href="https://iden3.io/circom">Circom </a> and <a href="https://github.com/ConsenSys/gnark"> gnark </a> as starting points for circuit programming languages since it's widely used and well-documented, but other circuit programming languages are also welcome. </p>
 
-   
+   <h2>Category 2: Smart Contracts</h2>
 
+    <p>
+    As shown in <a href="zkbridge.org">zkBridge</a>, it uses an updater smart contract on one chain to verify and accept proofs of block headers of another chain from relay nodes. Figure 1 shows how the updater contract maintains a list of recent block headers and updates it after verifying the relay node proofs. The contract provides an application-agnostic API for smart contracts to access the latest block headers of the sender blockchain and build application-specific logic.
+    </p>
+    <p>
+    In this category, the participants are expected to implement the framework of updater smart contracts and the updater contracts for specific chains.
+    </p>
+
+    <h2>Category 3: Message Relay Services</h2>
+
+
+    <p>
+    The off-chain message relaying node is a crucial component of a bridge as it delivers messages from the sender chain to the receiver chain. The relay node monitors a smart contract on the sender chain and gathers the messages for transmission. It generates a Merkle tree proof and delivers the messages to the receiver smart contract on the receiver chain.
+    </p>
+    <p>
+    Participants in this category are expected to build the message relay service, including the relay node and the relevant smart contracts.
+    </p>
+
+    <h2><strong>Category 4: Applications on zkBridge</strong></h2>
+
+    <p>
+    The cross-chain bridge has various use cases, including cross-chain token transfer/swap and NFT lock/stake, and can be used to transfer any message or share data across chains.
+    </p>
+    <p>
+    Participants are encouraged to develop innovative applications on top of the cross-chain bridge.
+    </p>
+
+    <h2>Category 5: Defense in Depth</h2>
+
+    <p>
+    As mentioned earlier, it is important to develop a defense-in-depth solution, leveraging different, independent implementations and proof diversity, to achieve even stronger security even if each implementation may have bugs. In this category, participants are expected to design and develop a framework to combine the different implementations for defense-in-depth. Note that this framework could incorporate other non-zk approaches later as well such as an optimistic bridge, as part of a defense-in-depth solution. The participants are expected to provide a description of the design and its security analysis, and smart contracts to implement the framework, including the APIs for different bridge implementations to submit block headers (and provide the corresponding proofs and validation) as well as the logic for combining them to provide the API for the final defense-in-depth solution. 
+    </p>
+    <h2>Category 6: Integrated Production Quality Solutions for Focused Chains</h2>
+
+
+    <p>
+    There are in total <em>N*(N-1)</em> directional bridges given <em>N</em> chains. Given the large number of potential bridges, we will focus on bridges over certain chains in this program:
+    </p>
+    <ul>
+
+    <li>Ethereum
+
+    <li>BSC
+
+    <li>Polygon
+
+    <li>Gnosis
+
+    <li>Tendermint-based chains
+    </li>
+    </ul>
+    <p>
+    In this category, we evaluate any projects that are designed for the above chains, and pick projects that improve the interoperability between them in any dimension.
+    </p>
 </div>
 
