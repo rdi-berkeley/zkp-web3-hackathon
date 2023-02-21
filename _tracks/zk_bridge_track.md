@@ -93,18 +93,17 @@ date: 2020-01-03 14:40:45
     </p>
     <ul>
 
-    <li>Ethereum
+    <li>Ethereum</li>
 
-    <li>BSC
+    <li>BSC</li>
 
-    <li>Polygon
+    <li>Polygon</li>
 
-    <li>Gnosis
+    <li>Gnosis</li>
 
-    <li>Tendermint-based chains
-    </li>
+    <li>Tendermint-based chains </li>
     </ul>
     <p>
     In this category, we evaluate any projects that are designed for the above chains, and pick projects that improve the interoperability between them in any dimension.
     </p>
-
+</div>
