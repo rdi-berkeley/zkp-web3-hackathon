@@ -9,7 +9,7 @@
       # subtitle: Finance, DeFi
     - name: Dawn Song
       homepage: https://people.eecs.berkeley.edu/~dawnsong/
-      image_file: dawn-berkeley.jpg
+      image_file: dawn.jpeg
       # subtitle: "Security & Privacy, Blockchain, ML"
     - name: Justin Thaler
       homepage: https://people.cs.georgetown.edu/jthaler/
@@ -19,7 +19,7 @@
       image_file: yupeng.jpeg
     - name: Andrew Miller
       homepage: https://soc1024.ece.illinois.edu/
-      image_file: andrew.jpg
+      image_file: andrew.png
     - name: Fan Zhang
       homepage: https://www.fanzhang.me/
       image_file: fan.jpg
