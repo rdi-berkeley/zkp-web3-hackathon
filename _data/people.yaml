@@ -1,0 +1,31 @@
+- section_name: "PEOPLE"
+  people:
+    - name: Dan Boneh
+      homepage: https://crypto.stanford.edu/~dabo/
+      image_file: Boneh.jpeg
+    - name: Shafi Goldwasser
+      homepage: https://www2.eecs.berkeley.edu/Faculty/Homepages/goldwasser.html/
+      image_file: goldwasser.jpeg
+      # subtitle: Finance, DeFi
+    - name: Dawn Song
+      homepage: https://people.eecs.berkeley.edu/~dawnsong/
+      image_file: dawn-berkeley.jpg
+      # subtitle: "Security & Privacy, Blockchain, ML"
+    - name: Justin Thaler
+      homepage: https://people.cs.georgetown.edu/jthaler/
+      image_file: thaler.png
+    - name: Yupeng Zhang
+      homepage: http://people.tamu.edu/~zhangyp/
+      image_file: yupeng.jpeg
+    - name: Andrew Miller
+      homepage: https://soc1024.ece.illinois.edu/
+      image_file: andrew.jpg
+    - name: Fan Zhang
+      homepage: https://www.fanzhang.me/
+      image_file: fan.jpg
+    - name: Patrick McCorry
+      homepage: https://stonecoldpat.github.io/
+      image_file: patrick.jpeg
+    - name: Pratyush Mishra
+      homepage: https://pratyushmishra.com/
+      image_file: pratyush.png
