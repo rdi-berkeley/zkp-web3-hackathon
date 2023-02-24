@@ -1,5 +1,5 @@
 ---
-title: ZKP Benchmarking track 
+title: zk-Benchmarks Track
 description: Contribute to an open-source benchmark framework and suite to measure the performance of various ZKP schemes/libraries on standard computations.
 date: 2020-01-01 14:40:45
 ---

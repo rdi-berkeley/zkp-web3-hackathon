@@ -1,5 +1,5 @@
 ---
-title: ZKP Blockchain/web3 application track
+title: zk-Applications Track
 description: Develop blockchain/web3 applications utilizing ZKP protocols, including DeFi, NFT, Games, decentralized identity, privacy etc.
 date: 2020-01-04 14:40:45
 ---
