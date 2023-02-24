@@ -17,7 +17,7 @@ date: 2020-01-03 14:40:45
 </div>
 
 <div style="text-align: justify">
-    <p><a href="zkbridge.org">zkBridge</a> proposes the first solution for building trustless, permissionless, extensible, universal, and efficient cross-chain bridges using ZKP. With succinct proofs, zkBridge not only guarantees strong security without external assumptions, but also significantly reduces on-chain verification cost.  zkBridge provides a modular design supporting a base layer with a standard API for smart contracts on one chain to obtain verified block headers from another chain using snarks.  By separating the bridge base layer from application-specific logic, zkBridge makes it easy to enable additional applications on top of the bridge, including message passing, token transfer, etc.. </p>
+    <p><a href="https://rdi.berkeley.edu/zkp/zkBridge/zkBridge.html">zkBridge</a> proposes the first solution for building trustless, permissionless, extensible, universal, and efficient cross-chain bridges using ZKP. With succinct proofs, zkBridge not only guarantees strong security without external assumptions, but also significantly reduces on-chain verification cost.  zkBridge provides a modular design supporting a base layer with a standard API for smart contracts on one chain to obtain verified block headers from another chain using snarks.  By separating the bridge base layer from application-specific logic, zkBridge makes it easy to enable additional applications on top of the bridge, including message passing, token transfer, etc.. </p>
 
     <p>Given zkBridge’s modular design, the work needed for building a zkBridge is highly decomposable and parallelizable, making it a great project for community contribution and the hackathon. We have carefully designed the tasks in this zkBridge track such that different teams and participants can contribute to different components of a zkBridge which when put together can build high-quality solutions of zkBridges across different chains.</p>
 
@@ -56,7 +56,7 @@ date: 2020-01-03 14:40:45
    <h2>Category 2: Smart Contracts</h2>
 
     <p>
-    As shown in <a href="zkbridge.org">zkBridge</a>, it uses an updater smart contract on one chain to verify and accept proofs of block headers of another chain from relay nodes. Figure 1 shows how the updater contract maintains a list of recent block headers and updates it after verifying the relay node proofs. The contract provides an application-agnostic API for smart contracts to access the latest block headers of the sender blockchain and build application-specific logic.
+    As shown in <a href="https://rdi.berkeley.edu/zkp/zkBridge/zkBridge.html">zkBridge</a>, it uses an updater smart contract on one chain to verify and accept proofs of block headers of another chain from relay nodes. Figure 1 shows how the updater contract maintains a list of recent block headers and updates it after verifying the relay node proofs. The contract provides an application-agnostic API for smart contracts to access the latest block headers of the sender blockchain and build application-specific logic.
     </p>
     <p>
     In this category, the participants are expected to implement the framework of updater smart contracts and the updater contracts for specific chains.
@@ -86,24 +86,12 @@ date: 2020-01-03 14:40:45
     <p>
     As mentioned earlier, it is important to develop a defense-in-depth solution, leveraging different, independent implementations and proof diversity, to achieve even stronger security even if each implementation may have bugs. In this category, participants are expected to design and develop a framework to combine the different implementations for defense-in-depth. Note that this framework could incorporate other non-zk approaches later as well such as an optimistic bridge, as part of a defense-in-depth solution. The participants are expected to provide a description of the design and its security analysis, and smart contracts to implement the framework, including the APIs for different bridge implementations to submit block headers (and provide the corresponding proofs and validation) as well as the logic for combining them to provide the API for the final defense-in-depth solution. 
     </p>
-    <h2>Category 6: Integrated Production Quality Solutions for Focused Chains</h2>
-
-    <p>
-    There are in total <em>N*(N-1)</em> directional bridges given <em>N</em> chains. Given the large number of potential bridges, we will focus on bridges over certain chains in this program:
-    </p>
-    <ul>
-
-    <li>Ethereum</li>
-
-    <li>BSC</li>
-
-    <li>Polygon</li>
-
-    <li>Gnosis</li>
-
-    <li>Tendermint-based chains </li>
-    </ul>
-    <p>
-    In this category, we evaluate any projects that are designed for the above chains, and pick projects that improve the interoperability between them in any dimension.
-    </p>
 </div>
+
+<div style="text-align: center;">
+  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
+</div>
+<div style="text-align: center;">
+<p> You can find a detailed description of all tasks for the Benchmarking Hackathon <a href="https://drive.google.com/file/d/1YX1ZdP-1KILYsbE1Xv_NHRpWB0AFqg-H/view?usp=share_link">here</a>.</p>
+</div>
+
