@@ -10,7 +10,7 @@ p + ul {
     margin-bottom: -10px;
 }
 
-p {
+/* p {
   font-size: x-large;
 }
 
@@ -20,7 +20,7 @@ ul {
 
 li {
   font-size: x-large;
-}
+} */
 
 </style>
 
@@ -35,13 +35,14 @@ li {
 
 <div style="text-align: justify">
 
-    <p>There is a large and ever-increasing number of SNARK implementations. Although the theoretical complexity of the underlying proof systems is well understood, the concrete costs rely on a number of factors such as the efficiency of the field and curve implementations, the underlying proof techniques, and the computation model and its compatibility with the specific application. To elicit the concrete performance differences in different proof systems, it is important to separately benchmark low-level arithmetics as well as end-to-end circuit implementations</p>
+    <p>There is a large and ever-increasing number of SNARK implementations. Although the theoretical complexity of the underlying proof systems is well understood, the concrete costs rely on a number of factors such as the efficiency of the field and curve implementations, the underlying proof techniques, and the computation model and its compatibility with the specific application. To elicit the concrete performance differences in different proof systems, it is important to separately benchmark low-level arithmetics as well as end-to-end circuit implementations.</p>
 
     <div style="text-align:center">
         <img src="{{site.baseurl}}/assets/img/Harness.jpg?raw=true" alt="Alt text" title="Title" />
         <figcaption>Figure 1 - zk-Harness Benchmarking Tool</figcaption>
     </div>
 
+    <h2>zk-Harness</h2>
     <p>We have designed and developed zk-Harness as a general framework for benchmarking ZKPs, such that community members can easily contribute in a standardized fashion. The zk-Harness is designed for SNARK ZKP-frameworks that allow proving a circuit that describes a general computation. It is intended to be easily extensible - new ZKP-frameworks, hardware configurations and new measurement workload can be easily integrated. We specify a generic set of interfaces, such that benchmarks can be invoked through a configuration file (config.json), which produces a standardized output for a given benchmarking scenario (Arithmetic, Curve, Circuit, Recursion).</p>
     <p>On a high level, zk-Harness takes as input a configuration file. The "Config Reader" reads the standardized config and invokes the ZKP framework as specified in the configuration file. You can find a description of the configuration file in the <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials/config">tutorials/config</a> sub-folder of the GitHub repository. Each integrated ZKP framework exposes a set of functions that take as an input the standardized configuration parameters to execute the corresponding benchmarks. The output of benchmarking a given ZKP framework is a log file in csv format with standardized metrics. The log file is read by the "Log Analyzer", which compiles the logs into pandas dataframes that are used by the front-end and displayed on the public website. You can find the standardized logging format in the <a href="https://github.com/zkCollective/zk-Harness/tree/main/tutorials/logs">tutorials/logs</a> sub-folder.</p>
     <p>Currently, the zk-Harness supports gnark and circom to provide a set of examples of how a ZKP-framework can be integrated in the zk-Harness. We provide a set of simple benchmarks that can be found in the <a href="https://github.com/zkCollective/zk-Harness/tree/main/benchmarks">benchmarks</a> directory.</p>
@@ -55,7 +56,7 @@ li {
 
 
 <div style="text-align: justify">
-    <p>There is a large and ever-increasing number of SNARK implementations. Although the theoretical complexity of the underlying proof systems is well understood, the concrete costs rely on a number of factors such as the efficiency of the field and curve implementations, the underlying proof techniques, and the computation model and its compatibility with the specific application. To elicit the concrete performance differences in different proof systems, it is important to separately benchmark the following:</p>
+    <p>There is a large and ever-increasing number of SNARK implementations. Although the theoretical complexity of the underlying proof systems is well understood, the concrete costs rely on a number of factors such as the efficiency of the field and curve implementations, the underlying proof techniques, and the computation model and its compatibility with the specific application. To elicit the concrete performance differences in different proof systems, we break the hackathon tasks into different categories to benchmark separately. We provide a high-level description in the following, you can find a detailed description <a href="https://drive.google.com/file/d/1Igm47dFXSOFAC_wldfUG4Y9OiITqlbQu/view?usp=share_link">here</a>.</p>
 
     <h2>Category 1: Mathematical Operations</h2>
     <p>All popular SNARKs operate over prime fields, which are basically integers modulo p, i.e., F<sub>p</sub>. While some SNARKs are associated with a single field F<sub>p</sub>, there are many SNARKs that rely on elliptic curve groups for security. For such SNARKs, the scalar field of the elliptic curve is F<sub>p</sub>, and the base field is a different field F<sub>q</sub>. Thus, the aim is to benchmark the field F<sub>p</sub>, along with the field F<sub>q</sub> and the elliptic curve group (if applicable).</p>
