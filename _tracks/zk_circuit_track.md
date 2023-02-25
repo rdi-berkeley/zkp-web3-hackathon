@@ -76,5 +76,12 @@ li {
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
 </div>
 <div style="text-align: center;">
-<p> You can find a detailed description of all tasks for the Benchmarking Hackathon <a href="https://drive.google.com/file/d/1iQ7Cl0OjeL_Rrwkn7zRGDjb6dp0O4QfG/view?usp=share_link">here</a>.</p>
+<p> You can find a detailed description of all tasks for the zk-Circuit Hackathon Track <a href="https://drive.google.com/file/d/1iQ7Cl0OjeL_Rrwkn7zRGDjb6dp0O4QfG/view?usp=share_link">here</a>.</p>
+</div>
+
+<div style="text-align: center;">
+  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">License</h1>
+</div>
+<div style="text-align: center;">
+<p> All accepted code submissions will be published in corresponding open-source GitHub repositories and licensed under the MIT license.</p>
 </div>

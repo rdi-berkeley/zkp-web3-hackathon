@@ -23,7 +23,7 @@ date: 2020-01-03 14:40:45
 
     <p>This track is co-hosted with zkCollective, an open community to help advance ZKP technologies in focused areas including zkBridge.</p>
 
-    <p>The overall goal for this effort is also to enable a defense-in-depth design, leveraging different, independent implementations and proof diversity; thus the overall solution combining the different implementations will provide even stronger security even if each implementation may have bugs. To achieve this goal, we encourage two parallel efforts: 1) developing different implementations of each component in a zkBridge from one network (or L2) to another; 2) developing a framework to combine the different implementations for defense-in-depth. Note that this framework could incorporate other non-zk approaches later as well such as an optimistic bridge, as part of a defense-in-depth solution. </p>
+    <p> <b>The overall goal for this effort is also to enable a defense-in-depth design</b>, leveraging different, independent implementations and proof diversity; thus the overall solution combining the different implementations will provide even stronger security even if each implementation may have bugs. To achieve this goal, we encourage two parallel efforts: 1) developing different implementations of each component in a zkBridge from one network (or L2) to another; 2) developing a framework to combine the different implementations for defense-in-depth. Note that this framework could incorporate other non-zk approaches later as well such as an optimistic bridge, as part of a defense-in-depth solution. </p>
 
 </div>
 
@@ -92,6 +92,12 @@ date: 2020-01-03 14:40:45
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
 </div>
 <div style="text-align: center;">
-<p> You can find a detailed description of all tasks for the Benchmarking Hackathon <a href="https://drive.google.com/file/d/1YX1ZdP-1KILYsbE1Xv_NHRpWB0AFqg-H/view?usp=share_link">here</a>.</p>
+<p> You can find a detailed description of all tasks for the zkBridge Hackathon Track <a href="https://drive.google.com/file/d/1YX1ZdP-1KILYsbE1Xv_NHRpWB0AFqg-H/view?usp=share_link">here</a>.</p>
 </div>
 
+<div style="text-align: center;">
+  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">License</h1>
+</div>
+<div style="text-align: center;">
+<p> All accepted code submissions will be published in corresponding open-source GitHub repositories and licensed under the MIT license.</p>
+</div>

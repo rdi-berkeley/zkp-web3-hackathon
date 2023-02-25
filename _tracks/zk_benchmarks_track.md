@@ -187,7 +187,7 @@ li {
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
 </div>
 <div style="text-align: center;">
-<p> You can find a detailed description of all tasks for the Benchmarking Hackathon <a href="https://drive.google.com/file/d/1Igm47dFXSOFAC_wldfUG4Y9OiITqlbQu/view?usp=share_link">here</a>.</p>
+<p> You can find a detailed description of all tasks for the zk-Benchmarks Track <a href="https://drive.google.com/file/d/1Igm47dFXSOFAC_wldfUG4Y9OiITqlbQu/view?usp=share_link">here</a>.</p>
 </div>
 
 <div style="text-align: center;">
