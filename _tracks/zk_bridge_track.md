@@ -17,7 +17,7 @@ date: 2020-01-03 14:40:45
 </div>
 
 <div style="text-align: justify">
-    <p><a href="https://rdi.berkeley.edu/zkp/zkBridge/zkBridge.html">zkBridge</a> proposes the first solution for building trustless, permissionless, extensible, universal, and efficient cross-chain bridges using ZKP. With succinct proofs, zkBridge not only guarantees strong security without external assumptions, but also significantly reduces on-chain verification cost.  zkBridge provides a modular design supporting a base layer with a standard API for smart contracts on one chain to obtain verified block headers from another chain using snarks.  By separating the bridge base layer from application-specific logic, zkBridge makes it easy to enable additional applications on top of the bridge, including message passing, token transfer, etc.. </p>
+    <p><a href="http://zkBridge.org">zkBridge</a> proposes the first solution for building trustless, permissionless, extensible, universal, and efficient cross-chain bridges using ZKP. With succinct proofs, zkBridge not only guarantees strong security without external assumptions, but also significantly reduces on-chain verification cost.  zkBridge provides a modular design supporting a base layer with a standard API for smart contracts on one chain to obtain verified block headers from another chain using snarks.  By separating the bridge base layer from application-specific logic, zkBridge makes it easy to enable additional applications on top of the bridge, including message passing, token transfer, etc.. </p>
 
     <p>Given zkBridge’s modular design, the work needed for building a zkBridge is highly decomposable and parallelizable, making it a great project for community contribution and the hackathon. We have carefully designed the tasks in this zkBridge track such that different teams and participants can contribute to different components of a zkBridge which when put together can build high-quality solutions of zkBridges across different chains.</p>
 
@@ -56,7 +56,7 @@ date: 2020-01-03 14:40:45
    <h2>Category 2: Smart Contracts</h2>
 
     <p>
-    As shown in <a href="https://rdi.berkeley.edu/zkp/zkBridge/zkBridge.html">zkBridge</a>, it uses an updater smart contract on one chain to verify and accept proofs of block headers of another chain from relay nodes. Figure 1 shows how the updater contract maintains a list of recent block headers and updates it after verifying the relay node proofs. The contract provides an application-agnostic API for smart contracts to access the latest block headers of the sender blockchain and build application-specific logic.
+    As shown in <a href="http://zkBridge.org">zkBridge</a>, it uses an updater smart contract on one chain to verify and accept proofs of block headers of another chain from relay nodes. Figure 1 shows how the updater contract maintains a list of recent block headers and updates it after verifying the relay node proofs. The contract provides an application-agnostic API for smart contracts to access the latest block headers of the sender blockchain and build application-specific logic.
     </p>
     <p>
     In this category, the participants are expected to implement the framework of updater smart contracts and the updater contracts for specific chains.
