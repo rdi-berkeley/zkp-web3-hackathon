@@ -56,18 +56,24 @@ li {
     <p>Cryptographic primitives such as hash functions and digital signatures are necessary building blocks in almost all ZKP applications on blockchain. The goal of this task is to design optimized circuits/R1CSs that have smaller sizes than existing ones compiled automatically by ZKP libraries. 
     </p>
 
-    <h3>1.1 - Cycles of elliptic curves: BLS12-377 to BW6-761</h3>
+
+    <h2>Category 2: Circuits/R1CSs for recursive SNARKs</h2>
+
+    <p>Recursion/proof composition is a technique to verify the proof of a first SNARK scheme using a second SNARK. It is an important technique to reduce the proof size, to improve the total prover time and to aggregate multiple proofs for different computations. The goal of this task is to design optimized circuits/R1CSs for common primitives used in recursive SNARKs. 
+    </p>
+
+    <h3>2.1 - Cycles of elliptic curves: BLS12-377 to BW6-761</h3>
 
     <p>Recursive SNARKs such as Zexe and VeriZexe rely on a "two-chain" of elliptic curves to support one level of recursion. The objective of this task is to optimize the circuit/R1CS in order to enable such recursion on the two curves. Specifically, the inner curve is BLS12-377, which includes the embedded curve of Jubjub377 with a base field that matches the scalar field of BLS12-377. Meanwhile, the outer curve is BW6-761, which has BLS12-377 as an embedded curve. The goal is to implement the bilinear pairing of the inner curve as a circuit/R1CS on the outer curve. Participants can use existing libraries such as arkworks to develop the circuits. </p>
 
-    <h3>1.2 - Verification of a Stark proof</h3>
+    <h3>2.2 - Verification of a Stark proof</h3>
     <p>Another type of recursive ZKPs is based on Stark. The objective is to enhance the circuit/R1CS of the Stark verification process, such that it can be combined with a second ZKP to minimize the size of the overall proof. To accomplish this, the task involves leveraging various building blocks, such as Merkle tree verification and hash functions that serve as random oracles.
     </p>
 
-    <h3>1.3 - Cross-field arithmetic: implementing additions and multiplications of one prime field over another prime. </h3>
+    <h3>2.3 - Cross-field arithmetic: implementing additions and multiplications of one prime field over another prime. </h3>
     <p> It is often necessary to incorporate arithmetic operations for a different field within the local field supported by a SNARK or other cryptographic application. This task involves selecting two distinct primes commonly utilized in SNARKs and other cryptographic primitives, and enhancing the circuit to facilitate arithmetic operations of one field on another field. The objective is to optimize the circuit to support this capability efficiently. </p>
 
-    <h2>Category 2: Special purpose ZKP protocols</h2>
+    <h2>Category 3: Special purpose ZKP protocols</h2>
     <p>To improve the ZKP schemes one step further, the goal of this task is to further design special-purpose ZKP protocols with better prover time tailored for the computations described above. The participants can utilize techniques such as custom gates, lookup arguments or propose other special ZKP protocols. 
     </p>
 </div>
