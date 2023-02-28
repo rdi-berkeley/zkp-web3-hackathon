@@ -26,6 +26,8 @@ li {
 
 <div style="text-align: justify">
  <p>We cordially invite the zk SNARK community to join us in creating a comprehensive benchmarking framework (zk-Harness) for zk SNARKs. As part of our efforts to further advance the technology and promote its widespread adoption, we have organized a ZKP-benchmark track in this ZKP/web3 Hackathon to bring together experts and enthusiasts from the community to collaborate and contribute to the establishment of a standardized benchmarking framework. This is a crucial step in the important mission to create a reference point for non-experts and experts alike on what zkSNARK scheme best suits their needs, and to also promote further research by identifying performance gaps. We believe that the collective efforts of the community will help to achieve this goal. Whether you are a researcher, developer, or simply passionate about zk SNARKs, we welcome your participation and contribution in this exciting initiative. </p>
+
+ <p> Some frameworks and tools in this track are developed as an initiative by the <a href="https://zkcollective.org/">zk-Collective</a>.</p>
 </div>
 
 

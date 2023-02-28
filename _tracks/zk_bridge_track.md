@@ -21,7 +21,9 @@ date: 2020-01-03 14:40:45
 
     <p>Given zkBridge’s modular design, the work needed for building a zkBridge is highly decomposable and parallelizable, making it a great project for community contribution and the hackathon. We have carefully designed the tasks in this zkBridge track such that different teams and participants can contribute to different components of a zkBridge which when put together can build high-quality solutions of zkBridges across different chains.</p>
 
-    <p>This track is co-hosted with zkCollective, an open community to help advance ZKP technologies in focused areas including zkBridge.</p>
+    <!-- <p>This track is co-hosted with zkCollective, an open community to help advance ZKP technologies in focused areas including zkBridge.</p> -->
+
+    <p> Some frameworks and tools in this track are developed as an initiative by the <a href="https://zkcollective.org/">zk-Collective</a>.</p>
 
     <p> <b>The overall goal for this effort is also to enable a defense-in-depth design</b>, leveraging different, independent implementations and proof diversity; thus the overall solution combining the different implementations will provide even stronger security even if each implementation may have bugs. To achieve this goal, we encourage two parallel efforts: 1) developing different implementations of each component in a zkBridge from one network (or L2) to another; 2) developing a framework to combine the different implementations for defense-in-depth. Note that this framework could incorporate other non-zk approaches later as well such as an optimistic bridge, as part of a defense-in-depth solution. </p>
 
