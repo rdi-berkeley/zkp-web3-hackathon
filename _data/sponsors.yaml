@@ -1,0 +1,14 @@
+- section_name: "SPONSORS"
+  sponsors:
+      - name: Aleo
+        homepage: https://www.aleo.org/
+        image_file: aleo.jpg
+      - name: Celo
+        homepage: https://www.aleo.org/
+        image_file: celo.jpg
+      - name: Near
+        homepage: https://www.aleo.org/
+        image_file: near.jpg
+      - name: scroll
+        homepage: https://www.aleo.org/
+        image_file: scroll.jpg
