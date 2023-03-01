@@ -49,6 +49,10 @@ li {
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Program Task Description</h1>
 </div>
 
+<p>
+Each of the following categories has designated tasks, which are described in <a href="https://drive.google.com/file/d/1iQ7Cl0OjeL_Rrwkn7zRGDjb6dp0O4QfG/view?usp=share_link">this</a> document. Beyond the tasks described here, we also encourage participants to come up with self-selected tasks. The prices for each of the tasks will be announced soon
+</p>
+
 <div style="text-align: justify">
 
     <h2>Category 1: Circuits/R1CSs for cryptographic primitives</h2>
