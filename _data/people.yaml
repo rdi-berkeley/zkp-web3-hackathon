@@ -29,6 +29,9 @@
     - name: Patrick McCorry
       homepage: https://stonecoldpat.github.io/
       image_file: patrick.jpeg
+    - name: Amit Sahai
+      homepage: http://web.cs.ucla.edu/~sahai
+      image_file: amit.jpg
     - name: Pratyush Mishra
       homepage: https://pratyushmishra.com/
       image_file: pratyush.png
@@ -38,3 +41,6 @@
     - name: Justin Drake
       homepage: https://twitter.com/drakefjustin?lang=en
       image_file: justindrake.jpg
+    - name: Teck Chia
+      homepage: https://twitter.com/hiteck
+      image_file: teck.jpg
