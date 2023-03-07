@@ -16,13 +16,15 @@ date: 2020-01-04 14:40:45
             <ul>
                <li><a href="https://github.com/AleoHQ/workshop/tree/master/battleship">Reference of Battleship written in Leo</a></li>
             </ul>
+        </li>
          <li>
             Use our <a href="https://github.com/AleoHQ/aleo-js">JavaScript library</a> and create a simple UI that web-based users can interact with to play your game  
             <ul>
                <li><a href="https://aleo.tools/">Reference of our JS library being used to create a web application</a></li>
             </ul>
-         <li>Deploy your application using <a href="https://developer.aleo.org/testnet/getting_started/deploy_execute">Deploy and Execute</a>
-         <li>Verify your application is successfully deployed
+        </li>
+         <li>Deploy your application using <a href="https://developer.aleo.org/testnet/getting_started/deploy_execute">Deploy and Execute</a></li>
+         <li>Verify your application is successfully deployed</li>
          <li>Share your artifacts, e.g., GitHub repo, any planning docs, specifications, etc. </li>
       </ul>
    </li>
@@ -34,8 +36,8 @@ date: 2020-01-04 14:40:45
    Total of $30,000 split amongst ten different prizes (like in a science fair):
 </p>
 <ul>
-   <li>ZK-maxi: One prize of $12,500
-   <li>ZK-expert: One prize of $7,500
+   <li>ZK-maxi: One prize of $12,500</li>
+   <li>ZK-expert: One prize of $7,500</li>
    <li>ZK-advanced: Five prizes of $2,000</li>
 </ul>
 <h2>
