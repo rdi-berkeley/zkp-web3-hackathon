@@ -65,7 +65,7 @@ date: 2020-01-03 14:40:45
     In this category, the participants are expected to implement the framework of updater smart contracts and the updater contracts for specific chains.
     </p>
  
- <h2>Category 3: Message Relay Services</h2>
+ <h2>Category 3: Block Header Relay Network</h2>
  
  <p>
   The zero-knowledge based bridge requires a relay network to deliver the block header securely from the source chain to the destination chain. A node in the block header relay network may connect to the full nodes of the source chain, and get the block headers continuously. Then the node generates the zero-knowledge proof of the block headers and delivers them to the updater contract on the target chain. 
