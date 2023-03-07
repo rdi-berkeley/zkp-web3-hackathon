@@ -123,7 +123,7 @@ Participants in this category are encouraged to use Hooks to develop zkBridge in
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
 </div>
 <div style="text-align: center;">
-<p> You can find a detailed description of all tasks for the zkBridge Hackathon Track <a href="https://drive.google.com/file/d/1YX1ZdP-1KILYsbE1Xv_NHRpWB0AFqg-H/view?usp=share_link">here</a>.</p>
+<p> You can find a detailed description of all tasks for the zkBridge Hackathon Track <a href="{{site.baseurl}}/assets/img/zkBridge_pdf.pdf">here</a>.</p>
 </div>
 
 <div style="text-align: center;">
