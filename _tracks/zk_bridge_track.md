@@ -64,8 +64,28 @@ date: 2020-01-03 14:40:45
     <p>
     In this category, the participants are expected to implement the framework of updater smart contracts and the updater contracts for specific chains.
     </p>
+ 
+ <h2>Category 3: Message Relay Services</h2>
+ 
+ <p>
+  The zero-knowledge based bridge requires a relay network to deliver the block header securely from the source chain to the destination chain. A node in the block header relay network may connect to the full nodes of the source chain, and get the block headers continuously. Then the node generates the zero-knowledge proof of the block headers and delivers them to the updater contract on the target chain. 
 
-    <h2>Category 3: Message Relay Services</h2>
+In this category, we assume the zero-knowledge proof generation is taken care of by the tasks in  other categories, and use a placeholder for the zero-knowledge proof generation. We expect participants to build the block header relay network with the following components:
+    <ul>
+   <li>Block header monitor</li>
+   <ul>
+       <li>Given a source chain, build the monitor to continuously connect to full nodes of the chain to retrieve new block headers</li>
+       <li>Call the placeholder zero-knowledge proof generation api for the proof</li>
+   </ul>
+   <li>Updater contract pusher</li>
+   <ul>
+       <li>For different target chains, the pusher can call the api provided by the updater contracts to deliver the block headers and the zero-knowledge proofs</li>
+   </ul>
+   </ul>
+  
+ </p>
+
+    <h2>Category 4: Message Relay Services</h2>
 
 
     <p>
@@ -75,7 +95,7 @@ date: 2020-01-03 14:40:45
     Participants in this category are expected to build the message relay service, including the relay node and the relevant smart contracts.
     </p>
 
-    <h2><strong>Category 4: Applications on zkBridge</strong></h2>
+    <h2><strong>Category 5: Applications on zkBridge</strong></h2>
 
     <p>
     The cross-chain bridge has various use cases, including cross-chain token transfer/swap and NFT lock/stake, and can be used to transfer any message or share data across chains.
@@ -84,10 +104,18 @@ date: 2020-01-03 14:40:45
     Participants are encouraged to develop innovative applications on top of the cross-chain bridge.
     </p>
 
-    <h2>Category 5: Defense in Depth</h2>
+    <h2>Category 6: Defense in Depth</h2>
 
     <p>
     As mentioned earlier, it is important to develop a defense-in-depth solution, leveraging different, independent implementations and proof diversity, to achieve even stronger security even if each implementation may have bugs. In this category, participants are expected to design and develop a framework to combine the different implementations for defense-in-depth. Note that this framework could incorporate other non-zk approaches later as well such as an optimistic bridge, as part of a defense-in-depth solution. The participants are expected to provide a description of the design and its security analysis, and smart contracts to implement the framework, including the APIs for different bridge implementations to submit block headers (and provide the corresponding proofs and validation) as well as the logic for combining them to provide the API for the final defense-in-depth solution. 
+    </p>
+    
+    <h2>Category 7: Instantiation on XRPL</h2> 
+    
+    <p> 
+    The XRP Ledger (XRPL) is an open source decentralized public blockchain. But differ from other blockchains that leverage smart contracts to build zkBridge, XRPL provides an alternative solution Hooks to support smart contract functionality on XRPL. 
+
+Participants in this category are encouraged to use Hooks to develop zkBridge initiatives on XRPL. 
     </p>
 </div>
 
