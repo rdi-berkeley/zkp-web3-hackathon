@@ -29,9 +29,7 @@ date: 2020-01-04 14:40:45
       </ul>
    </li>
 </ul>
-<div style="text-align: center;">
-   <h3>Prize allocation breakdown</h3>
-</div>
+<h3>Prize allocation breakdown</h3>
 <p>
    Total of $30,000 split amongst ten different prizes (like in a science fair):
 </p>
