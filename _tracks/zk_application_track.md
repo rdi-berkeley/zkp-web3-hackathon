@@ -6,6 +6,10 @@ date: 2020-01-04 14:40:45
 
 <!-- Submit a writeup detailing the application, the use of ZKPs and the security properties. In addition, submit a proof-of-concept implementation of the ZKP protocol and the blockchain smart contract using existing libraries and compilers. -->
 
+<div style="text-align: center;">
+  <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Program Task Description</h1>
+</div>
+
 <h2>Category 1: Aleo ZK Gaming</h2>
 <ul>
    <li>
@@ -46,4 +50,11 @@ date: 2020-01-04 14:40:45
 </p>
 <p>
    Prize: $5,000 (award provided by Celo)
+</p>
+
+<h2>
+   Self-Selected Tasks
+</h2>
+<p>
+   Beyond the tasks specified above, you can also work on a self-selected task! Prize information on self-selected tasks will follow soon.
 </p>
