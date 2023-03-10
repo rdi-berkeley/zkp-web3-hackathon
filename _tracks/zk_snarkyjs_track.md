@@ -1,6 +1,6 @@
 ---
 title: Writing zero-knowledge applications with SnarkyJS (Sponsored Track)
-description: Use SnarkyJS to write smart contracts and zkPrograms in TypeScript in collaboration with O(1) Labs
+description: Use SnarkyJS to write smart contracts and zkPrograms in TypeScript.
 date: 2019-12-31 14:40:45
 ---
 
