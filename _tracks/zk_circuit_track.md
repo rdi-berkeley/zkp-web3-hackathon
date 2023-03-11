@@ -82,7 +82,7 @@ Each of the following categories has designated tasks, which are described in <a
     </p>
 
     <h2>Category 4: Circuit development in Halo2-ce</h2>
-    <p> The goal of this task is to build and optimize RIPEMD-160, Blake2f and SHA2-256 hash functions in the halo2-ce ZKP framework. Scroll will create support material for the ZKP Circuits tracks — this will walk builders through how to set up a dev environment, test circuit correctness, and assess performance for their hackathon project. This dev environment will be using halo2-ce, which is an extension of the proof system used by the Ethereum Foundation's PSE team's zkevm project (which Scroll actively contributes to and uses in the Scroll network). Scroll is offering a <b> $15K prize </b> for this category.
+    <p> The goal of this task is to build and optimize RIPEMD-160, Blake2f and SHA2-256 hash functions in the halo2-ce ZKP framework. Scroll will create support material for the ZKP Circuits tracks — this will walk builders through how to set up a dev environment, test circuit correctness, and assess performance for their hackathon project. This dev environment will be using halo2-ce, which is an extension of the proof system used by the Ethereum Foundation's PSE team's zkevm project (which Scroll actively contributes to and uses in the Scroll network). Scroll is offering a <b> $15,000 prize </b> for this category.
     </p> 
 </div>
 
