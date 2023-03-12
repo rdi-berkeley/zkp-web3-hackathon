@@ -44,3 +44,9 @@
     - name: Teck Chia
       homepage: https://twitter.com/hiteck
       image_file: teck.jpg
+    - name: Aanchal Malhotra
+      homepage: https://twitter.com/aanchalmalhotre?lang=en
+      image_file: aanchal.png
+    - name: Howard Wu
+      homepage: https://twitter.com/1HowardWu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
+      image_file: howard.jpg
