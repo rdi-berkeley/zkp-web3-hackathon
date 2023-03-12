@@ -190,7 +190,8 @@ li {
 </div>
 
 <div style="text-align: justify">
-    <p> Prize: total up to $5K for top three best contributors </p>
+    <h3>Prizes</h3>
+    <p> A total of up to $5K will be awarded to the top three contributors </p>
 </div>
 <div style="text-align: center;">
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
