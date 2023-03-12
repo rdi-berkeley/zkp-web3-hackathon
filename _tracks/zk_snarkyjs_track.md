@@ -4,13 +4,8 @@ description: Use SnarkyJS to write smart contracts and zkPrograms in TypeScript.
 date: 2019-12-31 14:40:45
 ---
 
-<div style="text-align: justify">
- <p> At O(1) Labs, we've spent the last few years working toward SnarkyJS, and today we are excited to invite you to build the entirely new kinds of applications it enables! At the most fundamental level, SnarkyJS is a TypeScript library that makes it easy to define programs and generate or verify zero-knowledge proofs of their execution. It's also the smart contract language for Mina, our novel L1 blockchain that can consume these proofs so users can run verifiable code directly in their browsers! Moreover, no matter how much computation you are proving with SnarkyJS, the resultant proof is the same size, so there is no need for a gas model, and transactions will never reveal any unwanted information.
- </p>
-
- <p>
- We are eager to help you explore what's possible using the unique features of SnarkyJS! :)
- </p>
+<div style="text-align: center">
+ <p><em><a href="https://www.neardevgov.org/">NEAR Developer Governance</a> is pleased to sponsor this track, as it is exploring the potential for a ZK application layer for its protocol, with SnarkyJS as a leading candidate SDK.</em></p>
 </div>
 
 <div style="text-align: center;">
@@ -18,12 +13,21 @@ date: 2019-12-31 14:40:45
 </h1>
 
 <div style="text-align: justify">
- <p> We’ll use <a href="https://github.com/o1-labs/snarkyjs">SnarkyJS</a> to write smart contracts and zkPrograms in TypeScript. These will run in the browser, generating proofs of computation that are submitted in transactions that commit state changes to a blockchain on successful verification. The MINA Protocol will act as a verifier and hold our application state on-chain. SnarkyJS makes this easy.
- </p>
-
- <p>
- It’s a really fun and very different way to think about building applications that deliver a host of privacy and performance benefits.
- </p>
+  <p>
+  <a href="https://docs.minaprotocol.com/zkapps/">SnarkyJS</a> is a TypeScript library that makes it easy for developers to build powerful ZK applications without being cryptographers. Smart contracts written with SnarkyJS run in a user’s web browser retaining privacy for the user’s data inputs. 
+  </p>
+  <p>
+  SnarkyJS is built on a state-of-the-art Plonkish proof system called <a href="https://o1-labs.github.io/proof-systems/">Kimchi</a>, offering fixed proof size, infinite recursion, no trusted set up, and custom gates for better performance. It's expressive and easy to learn.
+  </p>
+  <p>
+  With SnarkyJS, instead of deploying smart contract code that runs on a blockchain, only a ZK verification key (VK) is deployed to the blockchain. Smart contracts execute in the browser and output a ZK proof (ZKP). When sent as part of a user’s transaction, the chain uses the VK to verify that the ZKP is valid for this application. If it is, it allows the on-chain state to be updated. These SnarkyJS-generated ZKPs can currently be verified by Mina Protocol.
+  </p>
+  <p>
+  This new ZK paradigm provides exciting ways to rethink Web3, leveraging infinite recursion, unlimited off-chain execution–no gas fees, optional full privacy for user’s data inputs, and more!
+  </p>
+  <p>
+  We hope that you enjoy exploring the new possibilities enabled by SnarkyJS and look forward to helping you along the way.
+  </p>
 </div>
 
 
@@ -39,7 +43,9 @@ date: 2019-12-31 14:40:45
  <p> 
 We’ll introduce you to the tools you need, help you decide what to build, support you along the way, and, finally, award some prizes.
  </p>
-
+  <p>
+  The <a href="https://docs.minaprotocol.com/zkapps/tutorials/hello-world">Mina Docs tutorials</a> are a great place to get started if you have never worked with SnarkyJS. They are easy to jump into and can help build intuition for what’s possible as you consider what you want to build. They are also a great place to draw inspiration from, even if you are already familiar with SnarkyJS.
+</p>
  <p>
  SnarkyJS enables a whole new world of applications, but we understand that finding a place to start can be daunting. So, here's a list of existing projects and ideas for new applications to help you get started.</p>
 
