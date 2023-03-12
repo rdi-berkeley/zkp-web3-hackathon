@@ -56,5 +56,5 @@ date: 2020-01-04 14:40:45
    Self-Selected Tasks
 </h2>
 <p>
-   Beyond the tasks specified above, you can also work on a self-selected task! Prize information on self-selected tasks will follow soon.
+   Prize: Up to $3000 for 1st place, Up to $2000 for 2nd place and Up to $1000 for 3rd place.
 </p>
