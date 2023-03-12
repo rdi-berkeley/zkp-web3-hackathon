@@ -104,7 +104,7 @@ Each of the following categories has designated tasks, which are described in <a
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
 </div>
 <div style="text-align: center;">
-<p> You can find a detailed description of all tasks for the zk-Circuit Hackathon Track <a href="https://drive.google.com/file/d/1iQ7Cl0OjeL_Rrwkn7zRGDjb6dp0O4QfG/view?usp=share_link">here</a>.</p>
+<p> You can find a detailed description of all tasks for the zk-Circuit Hackathon Track <a href="{{site.baseurl}}/assets/img/zkCircuit.pdf">here</a>.</p>
 </div>
 
 <div style="text-align: center;">
