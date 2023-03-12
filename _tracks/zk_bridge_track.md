@@ -119,6 +119,10 @@ Participants in this category are encouraged to use Hooks to develop zkBridge in
     </p>
 </div>
 
+<div style="text-align: justify">
+    <p> Prize: Prizes for Category 1-5 are provided by Gnosis Builder ($25K) and Jump ($20K); Prize for Category 6 is provided by Gnosis Builder ($10K); Prize for Category 7 is provided by Ripple ($10K) </p>
+</div>
+
 <div style="text-align: center;">
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
 </div>
