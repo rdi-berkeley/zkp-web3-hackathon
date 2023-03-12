@@ -95,6 +95,8 @@ Each of the following categories has designated tasks, which are described in <a
     <p>
     Zpoken has experience in programming recursive proof systems for distributed blockchain ledgers using the Plonky 2 protocol and Rust frameworks. This knowledge and experience is useful for popularizing this direction among the students during hackathons and other competitive forms of education.  We offer a series of simple tasks to learn the basics of the Rust programming language, the Plonky 2 protocol and recursive proof systems.  As the tasks progress, they become more complicated and supplemented with new scenarios, which, together with the competitive form of training, stimulates the cognitive functions of students.
     </p>
+    <br />
+    <p> A brief overview of the task can be found <a href="{{site.baseurl}}/assets/img/NEAR_circuit_pdf.pdf">here</a> </p>
     <p>
     Prize: Team (or individual) who solves the practical task and submits the presentation first wins the prize of $10,000.
     </p>
