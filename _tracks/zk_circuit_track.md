@@ -85,8 +85,19 @@ Each of the following categories has designated tasks, which are described in <a
     <p> The goal of this task is to build and optimize RIPEMD-160, Blake2f and SHA2-256 hash functions in the halo2-ce ZKP framework. Scroll will create support material for the ZKP Circuits tracks — this will walk builders through how to set up a dev environment, test circuit correctness, and assess performance for their hackathon project. This dev environment will be using halo2-ce, which is an extension of the proof system used by the Ethereum Foundation's PSE team's zkevm project (which Scroll actively contributes to and uses in the Scroll network).
     </p> 
     <p>
-   Prize: $15,000 (award provided by Scroll)
-</p>
+    Prize: $15,000 (award provided by Scroll)
+    </p>
+
+    <h2>Category 5: Brief proofs of critical computations in blockchain applications using NEAR as an example</h2>
+    <p> We encourage community members to work with us in programming recursive proof systems for Near Protocol using Plonky2 and Rust frameworks. The goal is to design different aggregation and recursive circuits optimized for several practical cases using Near Protocol primitives and data. It is highly in demand on the market tradeoffs between size and proof generation speed, as well as on-chain verification.
+    </p> 
+    <br/>
+    <p>
+    Zpoken has experience in programming recursive proof systems for distributed blockchain ledgers using the Plonky 2 protocol and Rust frameworks. This knowledge and experience is useful for popularizing this direction among the students during hackathons and other competitive forms of education.  We offer a series of simple tasks to learn the basics of the Rust programming language, the Plonky 2 protocol and recursive proof systems.  As the tasks progress, they become more complicated and supplemented with new scenarios, which, together with the competitive form of training, stimulates the cognitive functions of students.
+    </p>
+    <p>
+    Prize: Team (or individual) who solves the practical task and submits the presentation first wins the prize of $10,000.
+    </p>
 </div>
 
 <div style="text-align: center;">
