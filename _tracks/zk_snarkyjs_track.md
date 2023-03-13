@@ -1,5 +1,5 @@
 ---
-title: Writing zero-knowledge apps with SnarkyJS (Sponsored by NEAR Dev Gov)
+title: Writing Zero-Knowledge Apps with SnarkyJS from O(1) Labs (Sponsored by NEAR Dev GovTrack)
 description: Use SnarkyJS to write smart contracts and zkPrograms in TypeScript.
 date: 2019-12-31 14:40:45
 ---
