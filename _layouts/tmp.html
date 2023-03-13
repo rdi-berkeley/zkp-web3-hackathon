@@ -1,0 +1,105 @@
+<h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">Sponsors</h1>
+
+<style>
+  #sponsor-container {
+    /* background-color: #f8f8f6; */
+    margin-top: -29px;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+  }
+  
+  .sponsor-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sponsor {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: 40px;
+    /* margin: auto; */
+  }
+  
+  .rectangle {
+    display: block;
+    /* margin: 0 10px 200px 10px; */
+    /* border-radius: 200px; */
+    margin-left: auto; 
+    margin-right: auto;
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; 
+  }
+
+  
+  .sponsor-caption {
+    padding-top: 10px;
+    margin-top: 125px;
+  }
+  
+  .sponsor-text {
+    /* font-family: "Open Sans", sans-serif; */
+    font-weight: 400;
+    font-size: 18pt;
+    text-decoration: none;
+    /* color: #666666; */
+  }
+  
+  .sponsor-title {
+    /* font-family: "Open Sans", sans-serif; */
+    font-weight: 400;
+    font-size: 26pt;
+    /* color: #888; */
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+</style>
+
+<div id="sponsor-container" >
+  {% for section in site.data.sponsors %}
+  <div style="display: inline-block; padding-left: 20px; padding-right: 20px;">
+      <!-- <h2 class="sponsor-title"> {{ section.section_name }} </h2> -->
+      <div class="sponsor-list">
+          {% for sponsor in section.sponsors %}
+          <div class="sponsor">
+              {% if sponsor.image_file %}
+              <a href=" {{ sponsor.homepage }}" class="rectangle"
+                  style="
+                      background-image: url({{site.baseurl}}/assets/img/sponsors/{{sponsor.image_file}});
+                  background-position: top;"
+                  alt="{{ sponsor.name }}">
+              </a>
+              {% else %}
+              <a href=" {{ sponsor.homepage }}" class="rectangle"
+                  style="
+                      background-image: url({{site.baseurl}}/assets/images/default_profile.jpg);
+                  background-position: top; "
+                  alt="{{ sponsor.name }}">
+              </a>
+              {% endif %}
+              <div class="sponsor-caption">
+                  <a href="{{ sponsor.homepage }}" class="sponsor-text">
+                      <!-- <div class="sponsor-text"> {{ sponsor.name | replace_first: " ", "<br>"}} </div> -->
+                      <!-- <div class="sponsor-text" style="font-size: 0.8rem;"> {{ sponsor.subtitle }} </div> -->
+                  </a>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+
