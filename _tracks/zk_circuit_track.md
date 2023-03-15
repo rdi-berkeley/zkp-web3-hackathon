@@ -96,7 +96,7 @@ Each of the following categories has designated tasks, which are described in <a
     </p>
     <p> A brief overview of the task can be found <a href="{{site.baseurl}}/assets/img/NEAR_circuit_pdf.pdf">here</a> </p>
     <p>
-    Prize: Team (or individual) who solves the practical task and submits the presentation first wins the prize of $10,000.
+    Prize: Team (or individual) who solves the practical task and submits the presentation first wins the prize of $10,000 (sponsored by NEAR Dev Gov)
     </p>
 </div>
 
