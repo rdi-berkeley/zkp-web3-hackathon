@@ -48,6 +48,8 @@ We’ll introduce you to the tools you need, help you decide what to build, supp
 </p>
  <p>
  SnarkyJS enables a whole new world of applications, but we understand that finding a place to start can be daunting. So, here's a list of existing projects and ideas for new applications to help you get started.</p>
+ 
+ <p> <b> Snarky JS office hours are at 9 - 10am PT every Wednesday. </b> There’s an additional session every second Wednesday at 10 - 11am CET to cover more timezones. The schedule can be found <a href = "https://lu.ma/mina">here</a>.</p>
 
  </div>
 
