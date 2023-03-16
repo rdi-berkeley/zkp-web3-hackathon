@@ -80,13 +80,31 @@ Each of the following categories has designated tasks, which are described in <a
     <h2>Category 3: Special purpose ZKP protocols</h2>
     <p>To improve the ZKP schemes one step further, the goal of this task is to further design special-purpose ZKP protocols with better prover time tailored for the computations described above. The participants can utilize techniques such as custom gates, lookup arguments or propose other special ZKP protocols. 
     </p>
+
+    <h2>Category 4: Circuit development in Halo2-ce</h2>
+    <p> The goal of this task is to build and optimize RIPEMD-160, Blake2f and SHA2-256 hash functions in the halo2-ce ZKP framework. Scroll will create support material for the ZKP Circuits tracks — this will walk builders through how to set up a dev environment, test circuit correctness, and assess performance for their hackathon project. This dev environment will be using halo2-ce, which is an extension of the proof system used by the Ethereum Foundation's PSE team's zkevm project (which Scroll actively contributes to and uses in the Scroll network).
+    </p> 
+    <p>
+    Prize: $15,000 (award provided by Scroll)
+    </p>
+
+    <h2>Category 5: Brief proofs of critical computations in blockchain applications using NEAR as an example</h2>
+    <p> We encourage community members to work with us in programming recursive proof systems for Near Protocol using Plonky2 and Rust frameworks. The goal is to design different aggregation and recursive circuits optimized for several practical cases using Near Protocol primitives and data. It is highly in demand on the market tradeoffs between size and proof generation speed, as well as on-chain verification.
+    </p> 
+    <p>
+    Zpoken has experience in programming recursive proof systems for distributed blockchain ledgers using the Plonky 2 protocol and Rust frameworks. This knowledge and experience is useful for popularizing this direction among the students during hackathons and other competitive forms of education.  We offer a series of simple tasks to learn the basics of the Rust programming language, the Plonky 2 protocol and recursive proof systems.  As the tasks progress, they become more complicated and supplemented with new scenarios, which, together with the competitive form of training, stimulates the cognitive functions of students.
+    </p>
+    <p> A brief overview of the task can be found <a href="{{site.baseurl}}/assets/img/NEAR_circuit_pdf.pdf">here</a> </p>
+    <p>
+    Prize: Team (or individual) who solves the practical task and submits the presentation first wins the prize of $10,000 (sponsored by NEAR Dev Gov)
+    </p>
 </div>
 
 <div style="text-align: center;">
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Detailed Description</h1>
 </div>
 <div style="text-align: center;">
-<p> You can find a detailed description of all tasks for the zk-Circuit Hackathon Track <a href="https://drive.google.com/file/d/1iQ7Cl0OjeL_Rrwkn7zRGDjb6dp0O4QfG/view?usp=share_link">here</a>.</p>
+<p> You can find a detailed description of all tasks for the zk-Circuit Hackathon Track <a href="{{site.baseurl}}/assets/img/zkCircuit_pdf.pdf">here</a>.</p>
 </div>
 
 <div style="text-align: center;">
