@@ -46,7 +46,7 @@ date: 2020-01-03 14:40:45
     <p>The above graph shows the components of a typical Zero Knowledge (ZK) based bridge, including a proof system, light client, updater contracts, and DApps on top of the bridge.</p>
 
     <p>We've created specific tasks and prizes for each component. The focus is on enabling inter-communication between popular L1/L2 chains, such as Ethereum, BSC, Polygon, Tendermint and Gnosis.
-    Each of the following categories has designated tasks, which are described in <a href="https://drive.google.com/file/d/1YX1ZdP-1KILYsbE1Xv_NHRpWB0AFqg-H/view?usp=share_link">this</a> document. Beyond the tasks described here, we also encourage participants to come up with self-selected tasks. The prices for each of the tasks will be announced soon.
+    Each of the following categories has designated tasks, which are described in <a href="{{site.baseurl}}/assets/img/zkBridge_pdf.pdf">this</a> document. Beyond the tasks described here, we also encourage participants to come up with self-selected tasks. The prices for each of the tasks will be announced soon.
     </p>
 
     <h2> Category 1: Circuit </h2> 
