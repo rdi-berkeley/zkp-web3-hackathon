@@ -58,3 +58,47 @@ date: 2020-01-04 14:40:45
 <p>
    Prize: Up to $3000 for 1st place, Up to $2000 for 2nd place and Up to $1000 for 3rd place.
 </p>
+
+<h2>
+Category 3: Polkadot PoCs, Papers & More
+</h2>
+
+<p>
+We seek proof-of-concept cryptographic back ends, or interesting student papers or pre-specs, which should be Polkadot flavored in the broadest possible sense.
+</p>
+<p>
+<strong><em>As proof-of-concept code: </em></strong>Anything novel goes, provided the prover and verifier use Arkworks or Rust more generally. Avoid smart contract languages or higher-level platform specific zk languages. A few ideas include…
+</p>
+<ul>
+
+<li><em>Games:</em>  </li>
+
+<li><em>Batch verifiers:</em>  </li>
+
+<li><em>Avoid full ZK roll ups though</em>
+</li>
+</ul>
+<p>
+<strong><em>Student papers or pre-specs: </em></strong>A few ideas include…
+</p>
+<ul>
+
+<li><em>User-collator MPC:</em> </li>
+
+<li><em>Exploit user-collator anonymity:</em> </li>
+
+<li><em>Inter-collator MPC:</em> </li>
+</ul>
+<p>
+For full details refer to <a href="{{site.baseurl}}/assets/img/polkadot_pdf.pdf">this page</a>
+</p>
+<p>
+<strong>Prizes:</strong>
+</p>
+<p>
+1st Prize: $5k<br>2nd Prize: $3k<br>3rd Prize: $2k 
+</p>
+<p>
+<strong>Plus</strong> - Winners are nominated for admission to the Polkadot Blockchain Academy being held this summer at Berkeley; more details here  <a href="https://polkadot.network/development/academy/">https://polkadot.network/development/academy/</a> 
+</p>
+<p>
