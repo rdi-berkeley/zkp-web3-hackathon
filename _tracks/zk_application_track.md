@@ -130,10 +130,7 @@ This bounty seeks to reward innovative projects that leverage ZKP technology to 
 <strong>Prizes:</strong>
 </p>
 <p>
-1st Prize: $2,500
-</p>
-<p>
-2nd Prize: $1,500<br>3rd Prize: $1,000
+1st Prize: $2,500<br>2nd Prize: $1,500<br>3rd Prize: $1,000
 </p>
 <p>
 <strong>Requirements:</strong>
