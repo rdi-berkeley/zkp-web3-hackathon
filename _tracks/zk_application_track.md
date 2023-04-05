@@ -119,15 +119,10 @@ This bounty seeks to reward innovative projects that leverage ZKP technology to 
 
 <li><strong>Decentralized Identity and Authentication: </strong>Develop an application that allows users to prove their identity and authenticate without revealing their personal information using ZKP.
 </li>
-<ol>
 <li><strong>Privacy-Preserving Data Sharing:</strong> Build an application that enables secure and privacy-preserving data sharing between multiple parties using ZKP (e.g. anonymous DAO voting)
 </li>
-</ol>
-<ol>
 <li><strong>DeFi dApp:</strong> Develop a ZKP-based DeFi dApp that can enable efficient and scalable transactions while preserving user privacy and security. 
 </li>
-</ol>
-<ol>
 <li><strong>Gaming and NFT dApps:</strong> Build gaming or NFT applications that leverage the scalability and security benefits of Mantle and ZKP technology. These applications can enable private game state or augment on-chain logic with verifiable off-chain computation. Users can develop new infrastructure for ZK-enabled games or build games on top of existing ZK tooling.
 </li>
 </ol>
