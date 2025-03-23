@@ -108,3 +108,4 @@ Rate limiting nullifiers<br>
  Prizes will be awarded to the value of $10,000 for participants that best showcase the potential of zero-knowledge applications written in SnarkyJS. More details to follow. </p>
  </div>
 
+<script async src=”https://siteimproveanalytics.com/js/siteanalyze_6294756.js”></script>
