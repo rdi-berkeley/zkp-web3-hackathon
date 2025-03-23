@@ -6,6 +6,8 @@ date: 2020-01-04 14:40:45
 
 <!-- Submit a writeup detailing the application, the use of ZKPs and the security properties. In addition, submit a proof-of-concept implementation of the ZKP protocol and the blockchain smart contract using existing libraries and compilers. -->
 
+<script async src=”https://siteimproveanalytics.com/js/siteanalyze_6294756.js”></script>
+
 <div style="text-align: center;">
   <h1 style="font-weight: bold; font-size: 3em; color: #CB9445;">Program Task Description</h1>
 </div>
@@ -163,3 +165,5 @@ This bounty seeks to reward innovative projects that leverage ZKP technology to 
 <li><a href="https://github.com/mantlenetworkio">Mantle GitHub</a>
 
 <li><a href="https://airtable.com/shr9ATBlHZXCKDbPV">Mantle Developer Interest Form</a>
+
+<script async src=”https://siteimproveanalytics.com/js/siteanalyze_6294756.js”></script>
