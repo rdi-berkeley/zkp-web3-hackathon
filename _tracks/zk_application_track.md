@@ -165,5 +165,3 @@ This bounty seeks to reward innovative projects that leverage ZKP technology to 
 <li><a href="https://github.com/mantlenetworkio">Mantle GitHub</a>
 
 <li><a href="https://airtable.com/shr9ATBlHZXCKDbPV">Mantle Developer Interest Form</a>
-
-<script async src=”https://siteimproveanalytics.com/js/siteanalyze_6294756.js”></script>
